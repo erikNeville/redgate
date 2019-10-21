@@ -14,7 +14,6 @@ export const MyNavbar = styled.div`
   overflow: hidden;
 `;
 
-
 /* 
 *
 *
@@ -28,17 +27,19 @@ export const MyDesktopNav = styled.nav`
   color: black;
   display: flex;
   flex-flow: row nowrap;
-  height: 13vh;
+  height: 16vh;
   justify-content: space-around;
 
+  /* centering the brand and logo */
   @media screen and (max-width: 768px) {
     flex-flow: column nowrap;
   }
 
-  .logo {
-    font-size: 5vh;
+  /* may not be needed */
+  /* .logo {
+    font-size: 40.6vh;
     font-weight: bold;
-  }
+  } */
 
   .nav-links {
     align-items: center;
@@ -98,6 +99,7 @@ export const MyDesktopNav = styled.nav`
     }
   }
 
+  /* style for each individual link - NavLinks.js */
   .link {
     align-items: center;
     border-radius: 8px;
@@ -109,11 +111,13 @@ export const MyDesktopNav = styled.nav`
     padding: 0 1rem;
     text-decoration: none;
 
+    /* probably not needed */
     &:focus {
       background: rgba(0, 0, 0, 0.1);
       outline: none;
     }
 
+    /* line which grows on hover */
     &::after {
       content: '';
       background: #940001;
@@ -122,7 +126,6 @@ export const MyDesktopNav = styled.nav`
       transition: width 0.4s;
       width: 0;
     }
-
     &:hover::after {
       transform: width;
       width: 125%;
@@ -134,19 +137,27 @@ export const MyDesktopNav = styled.nav`
 LOGO IMAGE AND COMPANY NAME - Logo.js
 */
 export const RedgateLogo = styled.nav`
+  /* container and font of logo text */
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  font-size: 4.6vh;
+  font-size: 4vh;
   font-weight: bold;
 
+  /* adjusts the circular logo */
+  /*
+  need to adjust size of logo-image,
+  vw might not be best choice. Probably
+  better to use breakpoints.
+  */
   .logo-image {
     align-self: center;
     margin-right: 40px;
-    width: 55px;;
+    max-width: 5.7vw;
   }
 
+  /* the text for logo (Redgate Winery) */
   .logo-link {
     color: black;
     display: flex;
@@ -156,6 +167,8 @@ export const RedgateLogo = styled.nav`
     &:focus {
       outline: none;
     }
+
+    /* line underneath logo text */
     &::after {
       content: '';
       align-self: center;
@@ -174,6 +187,7 @@ export const RedgateLogo = styled.nav`
 
 /*
 MOBILE NAVIGATION BUTTON - DesktopNav.js
+  -- Button which says 'MENU'
 */
 export const MyMobileNavButton = styled.button`
   background: transparent;
@@ -181,22 +195,18 @@ export const MyMobileNavButton = styled.button`
   width: 6vh;
   border: none;
   display: none;
-  /* transition: transform 0.75s; */
-  /* transform: rotate(${props => props.displayMobile ? ('180deg') : ('0deg')}); */
 
+  /* display when MENU is opened */
   .menu {
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
 
-    &:focus {
+    /* insuring that TAB does not outline element */
+    /* &:focus {
       outline: none;
-    }
-
-    &:hover {
-      letter-spacing: .5rem;
-    }
+    } */
 
     &::after {
       content: '';
@@ -207,9 +217,10 @@ export const MyMobileNavButton = styled.button`
       width: 0;
     }
 
+    /* underline for MENU button */
     &:hover::after {
       transform: width;
-      width: 150%;
+      width: 130%;
     }
   }
 
@@ -276,6 +287,10 @@ MOBILE NAVIGATION - MobileNav.js
 *
 */
 export const MyMobileNav = styled.nav`  
+/* 
+Style for when 'MENU' button is pressed.
+Need "click-away-listener" function so that the menu closes.
+*/
   align-self: center;
   background: ${props => props.theme.primary};
   display: block;
@@ -284,17 +299,15 @@ export const MyMobileNav = styled.nav`
   max-height: 20vh;
   width: 100%;
   
+  /* The links that appear when "MENU" is pressed */
   .nav-links {
-    /* display: flex; */
-    /* flex-flow: column nowrap; */
-    /* justify-content: space-around; */
-    list-style: none;
     max-height: ${props => props.displayMobile ? ('20vh') : ('0')};
     overflow: hidden;
     text-align: center;
     transition: ${props => props.displayMobile ? ('max-height 0.4s ease-in') : ('max-height 0.4s ease-out')};
   }
   
+  /* Individual links within the list */
   .link {
     color: black;
     display: flex;
@@ -303,15 +316,11 @@ export const MyMobileNav = styled.nav`
     text-align: center;
     text-decoration: none;
 
-    /* &:hover {
-      letter-spacing: 10px;
-    } */
-
     &:focus {
-      background: rgba(0, 0, 0, 0.1);
       outline: none;
     }
 
+    /* line under links when MENU is open */
     &::after {
       content: '';
       background: #940001;
@@ -321,10 +330,9 @@ export const MyMobileNav = styled.nav`
       transition: width 0.4s;
       width: 0;
     }
-
     &:hover::after {
       transform: width;
-      width: 25%;
+      width: 12%;
     }
   } 
 `;

@@ -19,7 +19,6 @@ const CaptionBox = styled.div`
 `;
 
 const CarouselPage = ({images}) => {
-  console.log(images);
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
 

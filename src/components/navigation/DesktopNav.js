@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from './Logo';
-import mobileNavButton from '../../images/menu.svg';
 import {MyDesktopNav, MyMobileNavButton} from './CustomStyle';
 import NavLinks from './NavLinks';
 
