@@ -8,8 +8,8 @@ const HomeScreen = () => {
   return (
     <div>
       <CarouselPage />
-      <Location />
       <Description />
+      <Location />
       <Events />
     </div>
   );
