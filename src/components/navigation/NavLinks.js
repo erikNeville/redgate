@@ -11,10 +11,13 @@ const NavLinks = (props) => {
   return (
     <ul className='nav-links'>
       <li>
-        <Link to='/' className='link' tabIndex={tempTabIndex}>Home</Link>
+        <Link to='/about' className='link' tabIndex={tempTabIndex}>About</Link>
       </li>
       <li>
-        <Link to='/about' className='link' tabIndex={tempTabIndex}>About</Link>
+        <Link to='/events' className='link' tabIndex={tempTabIndex}>Events</Link>
+      </li>
+      <li>
+        <Link to='/wines' className='link' tabIndex={tempTabIndex}>Wines</Link>
       </li>
       <li>
         <Link to='/contact' className='link' tabIndex={tempTabIndex}>Contact</Link>

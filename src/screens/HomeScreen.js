@@ -1,15 +1,16 @@
 import React from 'react';
 import CarouselPage from '../components/carousel/CarouselPage';
-import Container from 'react-bootstrap/Container';
+import Description from '../components/description/Description';
+import Events from '../components/events/Events';
 import Location from '../components/location/Location';
 
 const HomeScreen = () => {
   return (
     <div>
       <CarouselPage />
-      <Container>
+      <Description />
       <Location />
-      </Container>
+      <Events />
     </div>
   );
 };

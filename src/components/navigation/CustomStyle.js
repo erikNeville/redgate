@@ -6,9 +6,24 @@ import styled from 'styled-components';
 BASE NAVBAR - Navbar.js
 *
 *
+Need to push content down when navbar reexpands
+Set top margin to next section which will check for props.show in Navbar.js
 */
-export const MyNavbar = styled.div`
+const NavbarBase = styled.nav`
+  background: white;
+  color: black;
+  position: fixed;
   display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  z-index: 1030;
+`;
+
+export const MyNavbar = styled(NavbarBase)`
+  /* display: flex; */
+  visibility: ${props => (props.show ? 'visible' : 'hidden')};
+  transition: all 200ms ${props => (props.show ? 'ease-in' : 'ease-out')};
+  transform: ${props => (props.show ? 'none' : 'translate(0, -100%)')};
   flex-flow: column nowrap;
   justify-content: flex-start;
   overflow: hidden;
@@ -53,7 +68,7 @@ export const MyDesktopNav = styled.nav`
     -moz-animation: fadeIn ease 1s;
     -o-animation: fadeIn ease 1s;
     -ms-animation: fadeIn ease 1s;
-    @keyframes fadeIn{
+    @keyframes fadeIn {
       0% {
         opacity:0;
       }
@@ -142,7 +157,7 @@ export const RedgateLogo = styled.nav`
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
-  font-size: 4vh;
+  font-size: 4.1vh;
   font-weight: bold;
 
   /* adjusts the circular logo */
@@ -154,7 +169,7 @@ export const RedgateLogo = styled.nav`
   .logo-image {
     align-self: center;
     margin-right: 40px;
-    max-width: 5.7vw;
+    max-width: 5.9vw;
   }
 
   /* the text for logo (Redgate Winery) */

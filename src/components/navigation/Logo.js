@@ -9,7 +9,7 @@ const Logo = () => {
       <Link to='/'>
         <img className='logo-image' src={redgateLogo} alt='Redgate Winery Logo' />
       </Link>
-      <Link to='/' className='logo-link'>Redgate Winery</Link>
+      <Link to='/' className='logo-link'>Redgate Vinyard & Winery</Link>
     </RedgateLogo>
   );
 };
