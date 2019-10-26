@@ -47,27 +47,27 @@ const initState = {
     {
       id: 1,
       src: entry,
-      title: 'Red Gate Entry',
+      title: 'Redgate Entry',
     },
     {
       id: 2,
       src: field,
-      title: 'Red Gate Field House',
+      title: 'Redgate Field House',
     },
     {
       id: 3,
       src: red,
-      title: 'Red Gate Grapes',
+      title: 'Redgate Grapes',
     },
     {
       id: 4,
       src: view,
-      title: 'Red Gate View',
+      title: 'Redgate View',
     },
     {
       id: 5,
       src: wines1000,
-      title: 'Red Gate Wines',
+      title: 'Redgate Wines',
     },
   ]
 };

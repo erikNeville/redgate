@@ -42,151 +42,151 @@ export const CarouselImages = {
   entry: {
     '2500': {
       src: entry2500,
-      title: 'Red Gate Entry',
+      title: 'Redgate Entry',
     },
     '1500': {
       src: entry1500,
-      title: 'Red Gate Entry',
+      title: 'Redgate Entry',
     },
     '1000': {
       src: entry1000,
-      title: 'Red Gate Entry',
+      title: 'Redgate Entry',
     },
     '750': {
       src: entry750,
-      title: 'Red Gate Entry',
+      title: 'Redgate Entry',
     },
     '500': {
       src: entry500,
-      title: 'Red Gate Entry',
+      title: 'Redgate Entry',
     },
     '300': {
       src: entry300,
-      title: 'Red Gate Entry',
+      title: 'Redgate Entry',
     },
     '100': {
       src: entry100,
-      title: 'Red Gate Entry',
+      title: 'Redgate Entry',
     },
   },
   field: {
     '2500': {
       src: field2500,
-      title: 'Red Gate Field House',
+      title: 'Redgate Field House',
     },
     '1500': {
       src: field1500,
-      title: 'Red Gate Field House',
+      title: 'Redgate Field House',
     },
     '1000': {
       src: field1000,
-      title: 'Red Gate Field House',
+      title: 'Redgate Field House',
     },
     '750': {
       src: field750,
-      title: 'Red Gate Field House',
+      title: 'Redgate Field House',
     },
     '500': {
       src: field500,
-      title: 'Red Gate Field House',
+      title: 'Redgate Field House',
     },
     '300': {
       src: field300,
-      title: 'Red Gate Field House',
+      title: 'Redgate Field House',
     },
     '100': {
       src: field100,
-      title: 'Red Gate Field House',
+      title: 'Redgate Field House',
     },
   },
   grapes: {
     '2500': {
       src: red2500,
-      title: 'Red Gate Red Grapes',
+      title: 'Redgate Red Grapes',
     },
     '1500': {
       src: red1500,
-      title: 'Red Gate Red Grapes',
+      title: 'Redgate Red Grapes',
     },
     '1000': {
       src: red1000,
-      title: 'Red Gate Red Grapes',
+      title: 'Redgate Red Grapes',
     },
     '750': {
       src: red750,
-      title: 'Red Gate Red Grapes',
+      title: 'Redgate Red Grapes',
     },
     '500': {
       src: red500,
-      title: 'Red Gate Red Grapes',
+      title: 'Redgate Red Grapes',
     },
     '300': {
       src: red300,
-      title: 'Red Gate Red Grapes',
+      title: 'Redgate Red Grapes',
     },
     '100': {
       src: red100,
-      title: 'Red Gate Red Grapes',
+      title: 'Redgate Red Grapes',
     },
   },
   view: {
     '2500': {
       src: view2500,
-      title: 'Red Gate View',
+      title: 'Redgate View',
     },
     '1500': {
       src: view1500,
-      title: 'Red Gate View',
+      title: 'Redgate View',
     },
     '1000': {
       src: view1000,
-      title: 'Red Gate View',
+      title: 'Redgate View',
     },
     '750': {
       src: view750,
-      title: 'Red Gate View',
+      title: 'Redgate View',
     },
     '500': {
       src: view500,
-      title: 'Red Gate View',
+      title: 'Redgate View',
     },
     '300': {
       src: view300,
-      title: 'Red Gate View',
+      title: 'Redgate View',
     },
     '100': {
       src: view100,
-      title: 'Red Gate View',
+      title: 'Redgate View',
     },
   },
   wines: {
     '2500': {
       src: wines2500,
-      title: 'Red Gate Wines',
+      title: 'Redgate Wines',
     },
     '1500': {
       src: wines1500,
-      title: 'Red Gate Wines',
+      title: 'Redgate Wines',
     },
     '1000': {
       src: wines1000,
-      title: 'Red Gate Wines',
+      title: 'Redgate Wines',
     },
     '750': {
       src: wines750,
-      title: 'Red Gate Wines',
+      title: 'Redgate Wines',
     },
     '500': {
       src: wines500,
-      title: 'Red Gate Wines',
+      title: 'Redgate Wines',
     },
     '300': {
       src: wines300,
-      title: 'Red Gate Wines',
+      title: 'Redgate Wines',
     },
     '100': {
       src: wines100,
-      title: 'Red Gate Wines',
+      title: 'Redgate Wines',
     },
   },
 }
