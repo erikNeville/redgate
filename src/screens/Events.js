@@ -3,11 +3,14 @@ import styled from 'styled-components';
 
 const EventsWrapper = styled.div`
   /* style here */
+  font-size: 20px;
 `;
 
 const Events = () => {
   return (
-    <EventsWrapper></EventsWrapper>
+    <EventsWrapper>
+      <p>foo</p>
+    </EventsWrapper>
   );
 };
 
