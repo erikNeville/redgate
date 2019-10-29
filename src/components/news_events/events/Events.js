@@ -45,11 +45,11 @@ const Events = ({events}) => {
       <Link to='/events' className='events-nav'>Events</Link>
       <p>Events will be inserted here from database</p>
       <p>There will be a border around events and news sections</p>
-      <h4>Event 1 Name</h4>
+      <h5>Event 1 Name</h5>
       <p>Event 1 description</p>
-      <h4>Event 2 Name</h4>
+      <h5>Event 2 Name</h5>
       <p>Event 2 description</p>
-      <h4>Event 3 Name</h4>
+      <h5>Event 3 Name</h5>
       <p>Event 3 description</p>
     </EventsWrapper>
   );

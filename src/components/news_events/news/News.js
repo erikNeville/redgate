@@ -43,11 +43,12 @@ const News = ({news}) => {
     <NewsWrapper>
       <Link to='/news' className='news-nav'>News</Link>
       <p>News will be inserted here from database</p>
-      <h4>News 1 Name</h4>
+      <p>You will be able to scroll through this list</p>
+      <h5>News 1 Name</h5>
       <p>News 1 description</p>  
-      <h4>News 2 Name</h4>
+      <h5>News 2 Name</h5>
       <p>News 2 description</p>  
-      <h4>News 3 Name</h4>
+      <h5>News 3 Name</h5>
       <p>News 3 description</p>  
     </NewsWrapper>
   );
