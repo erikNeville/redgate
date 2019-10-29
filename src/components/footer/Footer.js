@@ -12,7 +12,7 @@ const FooterWrapper = styled.div`
 function Footer() {
   return (
     <FooterWrapper>
-      Footer will go here
+      Footer will go on bottom
     </FooterWrapper>
   );
 };

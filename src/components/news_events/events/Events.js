@@ -9,6 +9,12 @@ const EventsWrapper = styled.div`
   padding: 0.25rem 3.5rem;
   text-align: start;
   width: 50vw;
+  .h5 {
+    font-size: 3vw;
+  }
+  .p {
+    font-size:2.6vw;
+  }
   @media screen and (max-width: 580px) {
     width: 100%;
     height: 300px;
@@ -21,7 +27,7 @@ const EventsWrapper = styled.div`
     align-items: center;
     text-decoration: none;
     @media screen and (max-width: 580px) {
-      font-size: 5.4vw;
+      font-size: 6vw;
     }
     &::after {
       content: '';
@@ -43,14 +49,12 @@ const Events = ({events}) => {
   return (
     <EventsWrapper>
       <Link to='/events' className='events-nav'>Events</Link>
-      <p>Events will be inserted here from database</p>
-      <p>There will be a border around events and news sections</p>
-      <h5>Event 1 Name</h5>
-      <p>Event 1 description</p>
-      <h5>Event 2 Name</h5>
-      <p>Event 2 description</p>
-      <h5>Event 3 Name</h5>
-      <p>Event 3 description</p>
+      <h5>{events[0].title}</h5>
+      <p>{events[0].date} || {events[0].start} - {events[0].end}</p>
+      <h5>{events[1].title}</h5>      
+      <p>{events[1].date}</p>
+      <h5>{events[2].title}</h5>
+      <p>{events[2].date}</p>
     </EventsWrapper>
   );
 };

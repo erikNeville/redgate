@@ -9,6 +9,12 @@ const NewsWrapper = styled.div`
   padding: 0.25rem 3.5rem;
   text-align: start;
   width: 50vw;
+  .h5 {
+    font-size: 3vw;
+  }
+  .p {
+    font-size:2.6vw;
+  }
   @media screen and (max-width: 580px) {
     width: 100%;
     height: 300px;
@@ -21,7 +27,7 @@ const NewsWrapper = styled.div`
     align-items: center;
     text-decoration: none;
     @media screen and (max-width: 580px) {
-      font-size: 5.4vw;
+      font-size: 6vw;
     }
     &::after {
       content: '';
@@ -42,8 +48,6 @@ const News = ({news}) => {
   return (
     <NewsWrapper>
       <Link to='/news' className='news-nav'>News</Link>
-      <p>News will be inserted here from database</p>
-      <p>You will be able to scroll through this list</p>
       <h5>News 1 Name</h5>
       <p>News 1 description</p>  
       <h5>News 2 Name</h5>

@@ -2,19 +2,19 @@ import React from 'react';
 import {BodyContainer} from '../components/BodyContainer';
 import styled from 'styled-components';
 
-const EventsScreenWrapper = styled.div`
+const AboutScreenWrapper = styled.div`
   /* style here */
   font-size: 20px;
 `;
 
-const EventsScreen = () => {
+const AboutScreen = () => {
   return (
     <BodyContainer>
-      <EventsScreenWrapper>
-        <h1>Events</h1>
-      </EventsScreenWrapper>
+      <AboutScreenWrapper>
+        <h1>About</h1>
+      </AboutScreenWrapper>
     </BodyContainer>
   );
 };
 
-export default EventsScreen;
+export default AboutScreen;
