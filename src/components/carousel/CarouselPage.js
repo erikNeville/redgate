@@ -1,17 +1,17 @@
 import React, {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import styled from 'styled-components';
 import {connect} from 'react-redux';
+import styled from 'styled-components';
 
-const CarouselDiv = styled.div`
-  color: white;
-  padding: 50px;
-  text-align: center;
+// const CarouselDiv = styled.div`
+//   color: white;
+//   padding: 50px;
+//   text-align: center;
 
-  .image {
-    max-height: 100px;
-  }
-`;
+//   .image {
+//     max-height: 100px;
+//   }
+// `;
 
 const CaptionBox = styled.div`
   background: rgba(54, 61, 72, 0.7);
@@ -94,7 +94,6 @@ const CarouselPage = ({images}) => {
           </CaptionBox>
         </Carousel.Caption>
       </Carousel.Item>
-      
     </Carousel>
   );
 };
