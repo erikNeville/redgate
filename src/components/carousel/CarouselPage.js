@@ -13,6 +13,13 @@ import styled from 'styled-components';
 //   }
 // `;
 
+const CarouselDiv = styled.div`
+  padding-top: 79px;
+  @media screen and (max-width: 768px) {
+    padding-top: 98px;
+  }
+`;
+
 const CaptionBox = styled.div`
   background: rgba(54, 61, 72, 0.7);
   border-radius: 10px;
@@ -28,6 +35,7 @@ const CarouselPage = ({images}) => {
   };
   // console.log(images);
   return (
+    <CarouselDiv>
     <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
       <Carousel.Item>
         <img
@@ -95,6 +103,7 @@ const CarouselPage = ({images}) => {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </CarouselDiv>
   );
 };
 

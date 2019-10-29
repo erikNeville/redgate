@@ -42,12 +42,13 @@ export const MyDesktopNav = styled.nav`
   color: black;
   display: flex;
   flex-flow: row nowrap;
-  height: 16vh;
+  height: 79px;
   justify-content: space-around;
 
   /* centering the brand and logo */
   @media screen and (max-width: 768px) {
     flex-flow: column nowrap;
+    height: 98px;
   }
 
   /* may not be needed */
@@ -57,6 +58,7 @@ export const MyDesktopNav = styled.nav`
   } */
 
   .nav-links {
+    align-content: center;
     align-items: center;
     animation: fadeIn ease 1s;
     display: flex;
@@ -156,9 +158,10 @@ export const RedgateLogo = styled.nav`
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
-  font-size: 4.1vh;
+  font-size: 3.5vh;
   font-weight: bold;
+  justify-content: center;
+  padding-top: 13px;
 
   /* adjusts the circular logo */
   /*
@@ -169,7 +172,7 @@ export const RedgateLogo = styled.nav`
   .logo-image {
     align-self: center;
     margin-right: 40px;
-    max-width: 5.9vw;
+    max-width: 53px;
   }
 
   /* the text for logo (Redgate Winery) */
@@ -311,7 +314,7 @@ Need "click-away-listener" function so that the menu closes.
   display: block;
   flex-flow: column nowrap;
   justify-content: center;
-  max-height: 20vh;
+  max-height: 30vh;
   width: 100%;
   
   /* The links that appear when "MENU" is pressed */
