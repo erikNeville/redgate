@@ -9,7 +9,6 @@ export const ContactInfoDiv = styled.div`
   display: flex;
   flex-flow: row nowrap;
   height: 15vw;
-
   @media screen and (max-width: 580px) {
     flex-flow: column nowrap;
     align-content: center;

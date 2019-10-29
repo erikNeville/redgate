@@ -14,17 +14,19 @@ import styled from 'styled-components';
 // `;
 
 const CarouselDiv = styled.div`
-  padding-top: 79px;
+  padding-top: 81px;
   @media screen and (max-width: 768px) {
     padding-top: 98px;
   }
 `;
 
+// the background for carousel image information
 const CaptionBox = styled.div`
   background: rgba(54, 61, 72, 0.7);
   border-radius: 10px;
 `;
 
+// handles the movement of carousel images
 const CarouselPage = ({images}) => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);

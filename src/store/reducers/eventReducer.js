@@ -21,6 +21,13 @@ const initState = {
       end: 'end time',
       title: 'some title',
     },
+    {
+      id: 4,
+      date: 'some date',
+      start: 'start time',
+      end: 'end time',
+      title: 'new new title',
+    },
   ],
 };
 

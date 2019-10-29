@@ -17,6 +17,7 @@ const NavbarBase = styled.nav`
   flex-wrap: nowrap;
   width: 100%;
   z-index: 1030;
+  box-shadow: 5px 5px 5px #C0C0C0;
 `;
 
 export const MyNavbar = styled(NavbarBase)`
@@ -42,7 +43,7 @@ export const MyDesktopNav = styled.nav`
   color: black;
   display: flex;
   flex-flow: row nowrap;
-  height: 79px;
+  height: 81px;
   justify-content: space-around;
 
   /* centering the brand and logo */

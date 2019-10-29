@@ -7,7 +7,7 @@ import styled from 'styled-components';
 const NewsEventsWrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  height: 15vw;
+  min-height: 15vw;
   @media screen and (max-width: 580px) {
     flex-flow: column nowrap;
     height: 600px;
@@ -15,8 +15,9 @@ const NewsEventsWrapper = styled.div`
 `;
 
 const Section = styled.div`
-  background: ${props => props.type ? ('lightblue') : ('lightgreen')};
-  border: black;
+  background: white;
+  padding-top: 11px;
+  text-align: center;
   width: 50vw;
   @media screen and (max-width: 580px) {
     width: 100%;
@@ -27,10 +28,10 @@ const Section = styled.div`
 const NewsEvents = ({events, news}) => {
   return (
     <NewsEventsWrapper>
-      <Section type={true}>
+      <Section info={true}>
         <Events events={events}/>
       </Section>
-      <Section type={false}>
+      <Section info={false}>
         <News news={news}/>
       </Section>
     </NewsEventsWrapper>
