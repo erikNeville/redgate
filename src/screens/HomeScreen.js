@@ -1,7 +1,7 @@
 import React from 'react';
 import CarouselPage from '../components/carousel/CarouselPage';
 import Description from '../components/description/Description';
-import Events from '../components/events/Events';
+import NewsEvents from '../components/news_events/NewsEvents';
 import Location from '../components/location/Location';
 
 const HomeScreen = () => {
@@ -10,7 +10,7 @@ const HomeScreen = () => {
       <CarouselPage />
       <Description />
       <Location />
-      <Events />
+      <NewsEvents />
     </div>
   );
 };
