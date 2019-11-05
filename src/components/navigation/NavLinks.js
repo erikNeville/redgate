@@ -11,9 +11,6 @@ const NavLinks = (props) => {
   return (
     <ul className='nav-links'>
       <li>
-        <Link to='/about' className='link' tabIndex={tempTabIndex}>About</Link>
-      </li>
-      <li>
         <Link to='/events' className='link' tabIndex={tempTabIndex}>Events</Link>
       </li>
       <li>

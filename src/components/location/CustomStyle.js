@@ -42,7 +42,7 @@ export const LocationDiv = styled.div`
     &::after {
       content: '';
       align-self: center;
-      background: #940001;
+      background: ${props => props.theme.hover};
       display: block;
       height: 2px;
       transition: width 0.4s;
@@ -116,7 +116,7 @@ export const Phone = styled.h1`
     &::after {
       content: '';
       align-self: center;
-      background: #940001;
+      background: ${props => props.theme.hover};
       display: block;
       height: 2px;
       transition: width 0.4s;

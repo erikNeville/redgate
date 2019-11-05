@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const DescriptionDiv = styled.div`
-  background: white;
+  background: ${props => props.theme.primary};
   display: flex;
   flex-flow: column;
   padding-top: 1rem;

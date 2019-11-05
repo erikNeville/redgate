@@ -10,7 +10,7 @@ Need to push content down when navbar reexpands
 Set top margin to next section which will check for props.show in Navbar.js
 */
 const NavbarBase = styled.nav`
-  background: white;
+  background: ${props => props.theme.primary};
   color: black;
   position: fixed;
   display: flex;
@@ -138,7 +138,7 @@ export const MyDesktopNav = styled.nav`
     /* line which grows on hover */
     &::after {
       content: '';
-      background: #940001;
+      background: ${props => props.theme.hover};
       display: block;
       height: 2px;
       transition: width 0.4s;
@@ -159,7 +159,8 @@ export const RedgateLogo = styled.nav`
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
-  font-size: 3.5vh;
+  font-family: 'Tangerine', cursive;
+  font-size: 4vh;
   font-weight: bold;
   justify-content: center;
   padding-top: 13px;
@@ -173,7 +174,7 @@ export const RedgateLogo = styled.nav`
   .logo-image {
     align-self: center;
     margin-right: 40px;
-    max-width: 53px;
+    max-width: 50px;
   }
 
   /* the text for logo (Redgate Winery) */
@@ -191,7 +192,7 @@ export const RedgateLogo = styled.nav`
     &::after {
       content: '';
       align-self: center;
-      background: #940001;
+      background: ${props => props.theme.hover};
       display: block;
       height: 2px;
       transition: width 0.4s;
@@ -229,7 +230,7 @@ export const MyMobileNavButton = styled.button`
 
     &::after {
       content: '';
-      background: #940001;
+      background: ${props => props.theme.hover};
       display: block;
       height: 2px;
       transition: width 0.4s;
@@ -342,7 +343,7 @@ Need "click-away-listener" function so that the menu closes.
     /* line under links when MENU is open */
     &::after {
       content: '';
-      background: #940001;
+      background: ${props => props.theme.hover};
       display: block;
       align-self: center;
       height: 2px;

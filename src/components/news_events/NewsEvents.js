@@ -15,7 +15,7 @@ const NewsEventsWrapper = styled.div`
 `;
 
 const Section = styled.div`
-  background: white;
+  background: ${props => props.theme.primary};
   padding-top: 11px;
   text-align: center;
   width: 50vw;
