@@ -2,7 +2,11 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const NavLinks = (props) => {
-  // creating a condition to prevent tabbing to hidden content
+  const closeNav = () => {
+		if (props.displayMobile) {
+			props.toggleMobileNav();
+		}
+	};
   let tempTabIndex;
   if (props.isMobileLink) {
     tempTabIndex = "-1";
@@ -11,13 +15,31 @@ const NavLinks = (props) => {
   return (
     <ul className='nav-links'>
       <li>
-        <Link to='/events' className='link' tabIndex={tempTabIndex}>Events</Link>
+        <Link
+          to='/events'
+          className='link'
+          onClick={closeNav}
+          tabIndex={tempTabIndex}>
+          Events
+        </Link>
       </li>
       <li>
-        <Link to='/wines' className='link' tabIndex={tempTabIndex}>Wines</Link>
+        <Link
+          to='/wines'
+          className='link'
+          onClick={closeNav}
+          tabIndex={tempTabIndex}>
+          Wines
+        </Link>
       </li>
       <li>
-        <Link to='/contact' className='link' tabIndex={tempTabIndex}>Contact</Link>
+        <Link
+          to='/contact'
+          className='link'
+          onClick={closeNav}
+          tabIndex={tempTabIndex}>
+          Contact
+        </Link>
       </li>
     </ul>
   );

@@ -4,11 +4,13 @@ import {MyMobileNav} from './CustomStyle';
 import NavLinks from './NavLinks';
 
 const MobileNav = (props) => {
-
   return (
     <Collapse in={props.displayMobile}>
       <MyMobileNav displayMobile={props.displayMobile}>
-        <NavLinks isMobileLink={true} />
+        <NavLinks
+          displayMobile={props.displayMobile}
+          isMobileLink={true}
+          toggleMobileNav={props.toggleMobileNav} />
       </MyMobileNav>
     </Collapse>
   );

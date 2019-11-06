@@ -7,7 +7,9 @@ const DesktopNav = (props) => {
 
   return (
     <MyDesktopNav>
-      <Logo />
+      <Logo
+        displayMobile={props.displayMobile}
+        toggleMobileNav={props.toggleMobileNav} />
       <div className="fade-in">
         <NavLinks />
       </div>
