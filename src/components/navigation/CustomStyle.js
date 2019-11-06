@@ -160,7 +160,7 @@ export const RedgateLogo = styled.nav`
   display: flex;
   flex-flow: row nowrap;
   font-family: 'Tangerine', cursive;
-  font-size: 4vh;
+  font-size: 4.5vh;
   font-weight: bold;
   justify-content: center;
   padding-top: 13px;

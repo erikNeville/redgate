@@ -9,6 +9,7 @@ export const ContactInfoDiv = styled.div`
   display: flex;
   flex-flow: row nowrap;
   height: 15vw;
+  margin-bottom: 40px;
   @media screen and (max-width: 580px) {
     flex-flow: column nowrap;
     align-content: center;
@@ -92,13 +93,23 @@ export const PhoneDiv = styled.div`
 
 /*
 *
+Hours content
+*
+*/
+export const Hours = styled.h3`
+  font-size: 3vw;
+  line-height: 1.6vw;
+`;
+
+/*
+*
 Phone content
 *
 */
 export const Phone = styled.h1`
-  font-size: 4vw;
+  font-size: 3.1vw;
   @media screen and (max-width: 580px) {
-    font-size: 5.9vw;
+    font-size: 4.3vw;
   }
 
   /* display for phone number */

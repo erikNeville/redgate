@@ -1,11 +1,12 @@
 import React from 'react';
 import {
   ContactInfoDiv,
+  Hours,
   LocationDiv,
   LocationHeader,
   LocationSubheader,
   PhoneDiv,
-  Phone
+  Phone,
 } from './CustomStyle';
 
 const Location = () => {
@@ -20,13 +21,19 @@ const Location = () => {
           <LocationHeader>8175 Buena Vista Road</LocationHeader>
           <LocationSubheader>Independence, Oregon 97351</LocationSubheader>
         </a>
-      </LocationDiv>
-      <PhoneDiv>
         <Phone>
           <a href='tel:+1-503-428-7115' className='phone-link'>
             1 (503) 428-7115
           </a>
         </Phone>
+      </LocationDiv>
+      <PhoneDiv>
+        <Hours>
+          <p>Tasting Hours</p>
+          <p>Friday/Saturday 12:00 PM – 9:00 PM</p>
+          <p>Sunday 12:00 PM – 5:00 PM</p>
+        </Hours>
+        
       </PhoneDiv>
     </ContactInfoDiv>
   );

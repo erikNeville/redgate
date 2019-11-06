@@ -19,5 +19,6 @@ code {
 }
 
 html {
+  overflow-x: hidden;
   background: white;
 }
