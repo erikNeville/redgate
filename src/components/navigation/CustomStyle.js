@@ -9,23 +9,16 @@ BASE NAVBAR - Navbar.js
 Need to push content down when navbar reexpands
 Set top margin to next section which will check for props.show in Navbar.js
 */
-const NavbarBase = styled.nav`
+export const NavbarBase = styled.nav`
   background: ${props => props.theme.primary};
   color: black;
   position: fixed;
   display: flex;
   flex-wrap: nowrap;
+  flex-flow: column nowrap;
   width: 100%;
   z-index: 1030;
-  box-shadow: 5px 5px 5px #C0C0C0;
-`;
-
-export const MyNavbar = styled(NavbarBase)`
-  /* display: flex; */
-  visibility: ${props => (props.show ? 'visible' : 'hidden')};
-  transition: all 200ms ${props => (props.show ? 'ease-in' : 'ease-out')};
-  transform: ${props => (props.show ? 'none' : 'translate(0, -100%)')};
-  flex-flow: column nowrap;
+  box-shadow: 0 2px 5px #C0C0C0;
   justify-content: flex-start;
   overflow: hidden;
 `;
@@ -163,8 +156,12 @@ export const RedgateLogo = styled.nav`
   better to use breakpoints.
   */
   .logo-image {
-    margin-right: 30px;
+    margin-right: 20px;
     max-width: 50px;
+    padding-bottom: 4px;
+    @media screen and (max-width: 768px) {
+      margin-right: 15px;
+    }
   }
 
   /* the text for logo (Redgate Winery) */

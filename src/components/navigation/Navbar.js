@@ -2,20 +2,10 @@ import React, {useEffect, useState} from 'react';
 import {useScrollPosition} from '../../useScrollPosition';
 import DesktopNav from './DesktopNav';
 import MobileNav from './MobileNav';
-import {MyNavbar} from './CustomStyle';
+import {NavbarBase} from './CustomStyle';
 
 const Navbar = () => {
   const [displayMobile, setDisplayMobile] = useState(false);
-  const [hideOnScroll, setHideOnScroll] = useState(true);
-
-  // useScrollPosition(({prevPos, currPos}) => {
-  //   const isShow = currPos.y > prevPos.y;
-  //   if (isShow !== hideOnScroll) {
-  //     setHideOnScroll(isShow);
-  //     setDisplayMobile(false);
-  //   }
-  // }, [hideOnScroll], false, false, 350);
-
   const toggleMobileNav = () => {
     setDisplayMobile(!displayMobile);
   };
@@ -31,13 +21,12 @@ const Navbar = () => {
   });
 
   return  (
-    <MyNavbar show={hideOnScroll}>
+    <NavbarBase>
       <DesktopNav
         displayMobile={displayMobile}
-        toggleMobileNav={toggleMobileNav}
-        show={hideOnScroll} />
-      <MobileNav displayMobile={displayMobile} show={hideOnScroll} />
-    </MyNavbar>
+        toggleMobileNav={toggleMobileNav} />
+      <MobileNav displayMobile={displayMobile} />
+    </NavbarBase>
   );
 };
 
