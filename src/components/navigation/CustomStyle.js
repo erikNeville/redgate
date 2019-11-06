@@ -43,7 +43,7 @@ export const MyDesktopNav = styled.nav`
   color: black;
   display: flex;
   flex-flow: row nowrap;
-  height: 81px;
+  height: 80px;
   justify-content: space-around;
 
   /* centering the brand and logo */
@@ -52,15 +52,7 @@ export const MyDesktopNav = styled.nav`
     height: 98px;
   }
 
-  /* may not be needed */
-  /* .logo {
-    font-size: 40.6vh;
-    font-weight: bold;
-  } */
-
   .nav-links {
-    align-content: center;
-    align-items: center;
     animation: fadeIn ease 1s;
     display: flex;
     flex-flow: row nowrap;
@@ -162,8 +154,7 @@ export const RedgateLogo = styled.nav`
   font-family: 'Tangerine', cursive;
   font-size: 4.5vh;
   font-weight: bold;
-  justify-content: center;
-  padding-top: 13px;
+  justify-content: space-around;
 
   /* adjusts the circular logo */
   /*
@@ -172,8 +163,7 @@ export const RedgateLogo = styled.nav`
   better to use breakpoints.
   */
   .logo-image {
-    align-self: center;
-    margin-right: 40px;
+    margin-right: 30px;
     max-width: 50px;
   }
 
