@@ -1,11 +1,23 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import wines from '../../images/wines/wines1000.jpg';
 import styled from 'styled-components';
 
 const WineWrapper = styled.div`
-  background: #940001;
+  background-image: url(${wines});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   color: white;
+  height: auto;
+  min-height: 516px;
+  width: 100%;
+  @media screen and (max-width: 580px) {
+  }
 
   .h1 {
     font-size: 3.5vw;
@@ -18,14 +30,12 @@ const WineWrapper = styled.div`
 
 const Wines = () => {
   return (
-    <div>
-      <Jumbotron fluid as={WineWrapper}>
-        <h1>Wines</h1>
-        <p>This will be the wines section.</p>
-        <p>The background will be white,</p>
-        <p>unless something else is desired</p>
-      </Jumbotron>
-    </div>
+    <WineWrapper>
+      <h1>Wines</h1>
+      <p>This will be the wines section.</p>
+      <p>The background will be white,</p>
+      <p>unless something else is desired</p>
+    </WineWrapper>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -29,6 +29,7 @@ const EventsWrapper = styled.div`
     width: 0 !important;
   }
   .event-text {
+    padding-top: 10px;
     padding-left: 12px;
   }
   .events-nav {
@@ -63,7 +64,7 @@ const Month = styled.div`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  box-shadow: 0 2px 10px gray;
+  box-shadow: 0 2px 9px gray;
 `;
 
 const Events = ({events}) => {

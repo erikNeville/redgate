@@ -1,12 +1,12 @@
 import {combineReducers} from 'redux';
 import eventReducer from './eventReducer';
 import imageReducer from './imageReducer';
-import newsReducer from './newsReducer';
+import forsaleReducer from './forsaleReducer';
 
 const rootReducer = combineReducers({
   events: eventReducer,
   images: imageReducer,
-  news: newsReducer,
+  forsale: forsaleReducer,
 });
 
 export default rootReducer;

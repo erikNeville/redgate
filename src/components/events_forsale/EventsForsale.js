@@ -1,13 +1,14 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Events from './events/Events';
-import News from './news/News';
+import Forsale from './forsale/Forsale';
 import styled from 'styled-components';
 
-const NewsEventsWrapper = styled.div`
+const EventsForsaleWrapper = styled.div`
   display: flex;
   flex-flow: row nowrap;
   min-height: 15vw;
+  padding-bottom: 2rem;
   @media screen and (max-width: 580px) {
     flex-flow: column nowrap;
     height: 600px;
@@ -21,28 +22,28 @@ const Section = styled.div`
   width: 50vw;
   @media screen and (max-width: 580px) {
     width: 100%;
-    height: 300px;
+    height: 400px;
   }
 `;
 
-const NewsEvents = ({events, news}) => {
+const EventsForsale = ({events, forsale}) => {
   return (
-    <NewsEventsWrapper>
+    <EventsForsaleWrapper>
       <Section info={true}>
         <Events events={events}/>
       </Section>
       <Section info={false}>
-        <News news={news}/>
+        <Forsale forsale={forsale}/>
       </Section>
-    </NewsEventsWrapper>
+    </EventsForsaleWrapper>
   );
 };
 
 const mapStateToProps = (state) => {
   return {
     events: state.events.events,
-    news: state.news.news,
+    forsale: state.forsale.forsale,
   };
 };
 
-export default connect(mapStateToProps)(NewsEvents);
+export default connect(mapStateToProps)(EventsForsale);
