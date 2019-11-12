@@ -65,7 +65,7 @@ Address content
 *
 */
 export const LocationHeader = styled.h1`
-  font-size: 4vw;
+  font-size: 3.1vw;
   @media screen and (max-width: 580px) {
     font-size: 5.4vw;
   }
