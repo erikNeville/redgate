@@ -71,6 +71,8 @@ const Location = styled.div`
 `;
 
 const Forsale = ({forsale}) => {
+  
+  console.log(forsale.location[0]);
   return (
     <ForsaleWrapper>
       <Link to='/forsale' className='title'>Where to Buy</Link>
