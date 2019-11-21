@@ -1,6 +1,5 @@
 import React, {useLayoutEffect} from 'react';
 import {BrowserRouter, Route, Switch, withRouter} from 'react-router-dom';
-import AboutScreen from './screens/AboutScreen';
 import ContactScreen from './screens/ContactScreen';
 import EventsScreen from './screens/EventsScreen';
 import Footer from './components/footer/Footer';
@@ -23,7 +22,6 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/' component={HomeScreen} />
-          <Route path='/about' component={AboutScreen} />
           <Route path='/contact' component={ContactScreen} />
           <Route path='/events' component={EventsScreen} />
           <Route path='/news' component={NewsScreen} />

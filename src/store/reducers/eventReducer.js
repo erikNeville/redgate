@@ -2,34 +2,6 @@ const initState = {
   events: {
     month: {
       november: [
-      {
-          id: 1,
-          date: 'Friday, November 1st',
-          start: '6pm',
-          end: '9pm',
-          title: '"Orvil Ivie" (Trio) - Costume Party',
-        },
-        {
-          id: 2,
-          date: 'Saturday, November 2nd',
-          start: '6pm',
-          end: '9pm',
-          title: '"Rewind" - 50s & 60s',
-        },
-        {
-          id: 3,
-          date: 'Sunday, November 3rd',
-          start: '2pm',
-          end: '4pm',
-          title: '"Patrick Anderson" - R & B',
-        },
-        {
-          id: 4,
-          date: 'Friday, November 8th',
-          start: '6pm',
-          end: '9pm',
-          title: '"Joanne Broh Blues Band" - Blues',
-        },
         {
           id: 5,
           date: 'Friday, November 27th',

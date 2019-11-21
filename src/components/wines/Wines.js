@@ -13,10 +13,11 @@ const WineWrapper = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
-  height: auto;
-  min-height: 516px;
   width: 100%;
+  padding-top: 180px;
   @media screen and (max-width: 580px) {
+    padding-top: 250px;
+    width: 100%;
   }
 
   .h1 {

@@ -4,7 +4,6 @@ import {connect} from 'react-redux';
 import styled from 'styled-components';
 
 const WinesScreenWrapper = styled.div`
-  /* style here */
   background: ${props => props.theme.primary};
   padding-top: 1rem;
   padding-right: 2.5rem;
@@ -19,10 +18,11 @@ const WineType = styled.h1`
 const WineDiv = styled.div`
   display: flex;
   flex-flow: row;
+  padding-left: 20px;
 `;
 
 const WinesScreen = ({wines}) => {
-  const {whites, reds} = wines.wines;
+  const {whites, reds} = wines;
   return (
     <BodyContainer>
       <WinesScreenWrapper>
@@ -59,7 +59,7 @@ const WinesScreen = ({wines}) => {
 
 const mapStateToProps = (state) => {
   return {
-    wines: state.wines,
+    wines: state.wines.wines,
   };
 };
 
