@@ -159,6 +159,15 @@ const initState = {
           title: '"Round House" - Bluegrass',
         },
       ],
+      january: [
+        {
+          id: 27,
+          date: 'Sunday, January 12th',
+          start: '2pm',
+          end: '4pm',
+          title: '“Ronnie Kay & Uncle Rey ”',
+        },
+      ],
     },
   },
 };

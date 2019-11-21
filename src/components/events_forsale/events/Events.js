@@ -68,7 +68,7 @@ const Month = styled.div`
 `;
 
 const Events = ({events}) => {
-  const {november, december} = events.month;
+  const {november, december, january} = events.month;
   
   return (
     <EventsWrapper>
@@ -87,6 +87,15 @@ const Events = ({events}) => {
           <h3>December</h3>
         </Month>
         {december && december.map((event) => (
+          <div className='event-text' key={event.id}>
+            <h5>{event.title}</h5>
+            <p>{event.date} || {event.start}-{event.end}</p>
+          </div>
+        ))}
+        <Month>
+          <h3>January</h3>
+        </Month>
+        {january && january.map((event) => (
           <div className='event-text' key={event.id}>
             <h5>{event.title}</h5>
             <p>{event.date} || {event.start}-{event.end}</p>
