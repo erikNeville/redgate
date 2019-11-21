@@ -42,7 +42,7 @@ const ForsaleWrapper = styled.div`
     }
     &:hover::after {
       transform: width;
-      width: 110%;
+      width: 104%;
     }
   }
   .location-info {
@@ -71,61 +71,67 @@ const Location = styled.div`
 `;
 
 const Forsale = ({forsale}) => {
-  
-  console.log(forsale.location[0]);
+  const {independence, salem, dallas, albany, mcminnville, other} = forsale.location;
   return (
     <ForsaleWrapper>
       <Link to='/forsale' className='title'>Where to Buy</Link>
       <div className='location-info'>
+
         <Location>
-          <h3>Indepencence, OR</h3>
+          <h3>Independence & Monmouth</h3>
         </Location>
-        <div className='location-text'>
-          <h5>Independence Wine</h5>
-          <p>444 Main Street</p>
-          <h5>Independence Wine</h5>
-          <p>444 Main Street</p>
-          <h5>Independence Wine</h5>
-          <p>444 Main Street</p>
-          <h5>Independence Wine</h5>
-          <p>444 Main Street</p>
-          <h5>Independence Wine</h5>
-          <p>444 Main Street</p>
-        </div>
+        {independence && independence.map((location) => (
+          <div className='location-text' key={location.id}>
+            <h5>{location.place}</h5>
+          </div>
+        ))}
+
         <Location>
-          <h3>Salem, OR</h3>
+          <h3>Salem</h3>
         </Location>
-        <div className='location-text'>
-          <h5>Salem Wine</h5>
-          <p>123 Salem Street</p>
-          <h5>Salem Wine</h5>
-          <p>123 Salem Street</p>
-          <h5>Salem Wine</h5>
-          <p>123 Salem Street</p>
-          <h5>Salem Wine</h5>
-          <p>123 Salem Street</p>
-          <h5>Salem Wine</h5>
-          <p>123 Salem Street</p>
-        </div>
+        {salem && salem.map((location) => (
+          <div className='location-text' key={location.id}>
+            <h5>{location.place}</h5>
+          </div>
+        ))}
+
         <Location>
-          <h3>Portland, OR</h3>
+          <h3>Dallas</h3>
         </Location>
-        <div className='location-text'>
-          <h5>Portland Wine</h5>
-          <p>900 Portland Street</p>
-          <h5>Portland Wine</h5>
-          <p>900 Portland Street</p>
-          <h5>Portland Wine</h5>
-          <p>900 Portland Street</p>
-          <h5>Portland Wine</h5>
-          <p>900 Portland Street</p>
-          <h5>Portland Wine</h5>
-          <p>900 Portland Street</p>
-          <h5>Portland Wine</h5>
-          <p>900 Portland Street</p>
-          <h5>Portland Wine</h5>
-          <p>900 Portland Street</p>
-        </div>
+        {dallas && dallas.map((location) => (
+          <div className='location-text' key={location.id}>
+            <h5>{location.place}</h5>
+          </div>
+        ))}
+        
+        <Location>
+          <h3>Albany</h3>
+        </Location>
+        {albany && albany.map((location) => (
+          <div className='location-text' key={location.id}>
+            <h5>{location.place}</h5>
+          </div>
+        ))}
+        
+        <Location>
+          <h3>McMinnville</h3>
+        </Location>
+        {mcminnville && mcminnville.map((location) => (
+          <div className='location-text' key={location.id}>
+            <h5>{location.place}</h5>
+          </div>
+        ))}
+        
+        <Location>
+          <h3>Other</h3>
+        </Location>
+        {other && other.map((location) => (
+          <div className='location-text' key={location.id}>
+            <h5>{location.place}</h5>
+            <p>{location.desc}</p>
+          </div>
+        ))}
+
       </div>
     </ForsaleWrapper>
   );

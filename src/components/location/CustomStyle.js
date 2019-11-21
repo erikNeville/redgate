@@ -11,6 +11,7 @@ export const ContactInfoDiv = styled.div`
   height: 15vw;
   margin-bottom: 40px;
   @media screen and (max-width: 580px) {
+    margin-bottom: 59px;
     flex-flow: column nowrap;
     align-content: center;
     align-items: center;
@@ -51,9 +52,9 @@ export const LocationDiv = styled.div`
     }
     &:hover::after {
       transform: width;
-      width: 80%;
+      width: 74%;
       @media screen and (max-width: 580px) {
-        width: 105%;
+        width: 99%;
       }
     }
   }
@@ -80,25 +81,16 @@ export const LocationSubheader = styled.h3`
 
 /*
 *
-Phone wrapper
-*
-*/
-export const PhoneDiv = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  padding-top: 11px;
-  text-align: center;
-  width: 50vw;
-`;
-
-/*
-*
 Hours content
 *
 */
-export const Hours = styled.h3`
-  font-size: 3vw;
-  line-height: 1.6vw;
+export const Hours = styled.h1`
+  font-size: 3.1vw;
+  line-height: 27px;
+  @media screen and (max-width: 580px) {
+    font-size: 4.1vw;
+    line-height: 5px;
+  }
 `;
 
 /*
@@ -109,7 +101,8 @@ Phone content
 export const Phone = styled.h1`
   font-size: 3.1vw;
   @media screen and (max-width: 580px) {
-    font-size: 4.3vw;
+    font-size: 4.8vw;
+    padding-top: 10px;
   }
 
   /* display for phone number */
@@ -136,9 +129,9 @@ export const Phone = styled.h1`
 
     &:hover::after {
       transform: width;
-      width: 60%;
+      width: 45%;
       @media screen and (max-width: 580px) {
-        width: 85%;
+        width: 65%;
       }
     }
   }

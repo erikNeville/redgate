@@ -1,20 +1,66 @@
 import React from 'react';
 import {BodyContainer} from '../components/BodyContainer';
+import {connect} from 'react-redux';
 import styled from 'styled-components';
 
 const WinesScreenWrapper = styled.div`
   /* style here */
-  font-size: 20px;
+  background: ${props => props.theme.primary};
+  padding-top: 1rem;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
 `;
 
-const WinesScreen = () => {
+const WineType = styled.h1`
+  font-family: 'Tangerine';
+  font-weight: bold;
+`;
+
+const WineDiv = styled.div`
+  display: flex;
+  flex-flow: row;
+`;
+
+const WinesScreen = ({wines}) => {
+  const {whites, reds} = wines.wines;
   return (
     <BodyContainer>
       <WinesScreenWrapper>
-        <h1>Wines</h1>
+        <WineType>Redgate Whites</WineType>
+        {whites && whites.map((whiteWine) => (
+          <WineDiv key={whiteWine.id}>
+            <p>
+              <strong>
+                {whiteWine.year} {whiteWine.type}
+              </strong> 
+              {whiteWine.price ? ' ($'+whiteWine.price+')' : null}
+              &nbsp;&mdash;&nbsp;
+              {whiteWine.desc ? whiteWine.desc : null}
+            </p>
+          </WineDiv>
+        ))}
+        <WineType>Redgate Reds</WineType>
+        {reds && reds.map((redWine) => (
+          <WineDiv key={redWine.id}>
+            <p>
+              <strong>
+                {redWine.year} {redWine.type}
+              </strong> 
+              {redWine.price ? ' ($'+redWine.price+')' : null}
+              &nbsp;&mdash;&nbsp;
+              {redWine.desc ? redWine.desc : null}
+            </p>
+          </WineDiv>
+        ))}
       </WinesScreenWrapper>
     </BodyContainer>
   );
 };
 
-export default WinesScreen;
+const mapStateToProps = (state) => {
+  return {
+    wines: state.wines,
+  };
+};
+
+export default connect(mapStateToProps)(WinesScreen);

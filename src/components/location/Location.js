@@ -5,7 +5,6 @@ import {
   LocationDiv,
   LocationHeader,
   LocationSubheader,
-  PhoneDiv,
   Phone,
 } from './CustomStyle';
 
@@ -27,14 +26,13 @@ const Location = () => {
           </a>
         </Phone>
       </LocationDiv>
-      <PhoneDiv>
+      <LocationDiv>
         <Hours>
-          <p>Tasting Hours</p>
-          <p>Friday/Saturday 12:00 PM – 9:00 PM</p>
+          <p>Friday 12:00 PM - 9:00 PM</p>
+          <p>Saturday 12:00 PM – 9:00 PM</p>
           <p>Sunday 12:00 PM – 5:00 PM</p>
         </Hours>
-        
-      </PhoneDiv>
+      </LocationDiv>
     </ContactInfoDiv>
   );
 };

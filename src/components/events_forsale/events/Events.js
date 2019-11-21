@@ -52,7 +52,7 @@ const EventsWrapper = styled.div`
     }
     &:hover::after {
       transform: width;
-      width: 125%;
+      width: 105%;
     }
   }
 `;
