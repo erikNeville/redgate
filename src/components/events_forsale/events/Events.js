@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
+import EventList from './EventList';
 
 const EventsWrapper = styled.div`
   display: flex;
@@ -27,10 +28,6 @@ const EventsWrapper = styled.div`
   }
   .event-info::-webkit-scrollbar {
     width: 0 !important;
-  }
-  .event-text {
-    padding-top: 10px;
-    padding-left: 12px;
   }
   .events-nav {
     color: black;
@@ -77,30 +74,15 @@ const Events = ({events}) => {
         <Month>
           <h3>November</h3>
         </Month>
-        {november && november.map((event) => (
-          <div className='event-text' key={event.id}>
-            <h5>{event.title}</h5>
-            <p>{event.date} || {event.start}-{event.end}</p>
-          </div>
-        ))}
+        <EventList event={november} />
         <Month>
           <h3>December</h3>
         </Month>
-        {december && december.map((event) => (
-          <div className='event-text' key={event.id}>
-            <h5>{event.title}</h5>
-            <p>{event.date} || {event.start}-{event.end}</p>
-          </div>
-        ))}
+        <EventList event={december} />
         <Month>
           <h3>January</h3>
         </Month>
-        {january && january.map((event) => (
-          <div className='event-text' key={event.id}>
-            <h5>{event.title}</h5>
-            <p>{event.date} || {event.start}-{event.end}</p>
-          </div>
-        ))}
+        <EventList event={january} />
       </div>
     </EventsWrapper>
   );

@@ -34,6 +34,15 @@ const NavLinks = (props) => {
       </li>
       <li>
         <Link
+          to='/retailers'
+          className='link'
+          onClick={closeNav}
+          tabIndex={tempTabIndex}>
+          Retailers
+        </Link>
+      </li>
+      <li>
+        <Link
           to='/contact'
           className='link'
           onClick={closeNav}

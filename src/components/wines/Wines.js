@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const WineWrapper = styled.div`
   background-image: url(${wines});
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: center;
   background-position: center;
   text-align: center;
   display: flex;

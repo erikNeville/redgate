@@ -105,11 +105,12 @@ export const MyDesktopNav = styled.nav`
   /* style for each individual link - NavLinks.js */
   .link {
     align-items: center;
+    align-content: center;
     border-radius: 8px;
     color: black;
     display: flex;
     flex-flow: column nowrap;
-    font-size: 2.5vh;
+    font-size: 2.2vh;
     justify-content: center;
     padding: 0 1rem;
     text-decoration: none;

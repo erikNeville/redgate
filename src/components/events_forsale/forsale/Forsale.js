@@ -71,16 +71,25 @@ const Location = styled.div`
 `;
 
 const Forsale = ({forsale}) => {
-  const {independence, salem, dallas, albany, mcminnville, other} = forsale.location;
+  const {independence, monmouth, salem, dallas, albany, mcminnville, other} = forsale.location;
   return (
     <ForsaleWrapper>
-      <Link to='/forsale' className='title'>Where to Buy</Link>
+      <Link to='/retailers' className='title'>Retailers</Link>
       <div className='location-info'>
 
         <Location>
-          <h3>Independence & Monmouth</h3>
+          <h3>Independence</h3>
         </Location>
         {independence && independence.map((location) => (
+          <div className='location-text' key={location.id}>
+            <h5>{location.place}</h5>
+          </div>
+        ))}
+        
+        <Location>
+          <h3>Monmouth</h3>
+        </Location>
+        {monmouth && monmouth.map((location) => (
           <div className='location-text' key={location.id}>
             <h5>{location.place}</h5>
           </div>
@@ -131,7 +140,8 @@ const Forsale = ({forsale}) => {
             <p>{location.desc}</p>
           </div>
         ))}
-
+          <br/>
+          <br/>
       </div>
     </ForsaleWrapper>
   );
