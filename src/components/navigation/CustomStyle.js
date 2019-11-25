@@ -228,7 +228,7 @@ export const MyMobileNavButton = styled.button`
     /* underline for MENU button */
     &:hover::after {
       transform: width;
-      width: 130%;
+      width: 90%;
     }
   }
 
@@ -340,7 +340,7 @@ Need "click-away-listener" function so that the menu closes.
     }
     &:hover::after {
       transform: width;
-      width: 12%;
+      width: 10%;
     }
   } 
 `;

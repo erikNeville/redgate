@@ -142,6 +142,8 @@ const Forsale = ({forsale}) => {
         ))}
           <br/>
           <br/>
+          <br/>
+          <br/>
       </div>
     </ForsaleWrapper>
   );
