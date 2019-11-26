@@ -32,12 +32,15 @@ const EventsWrapper = styled.div`
   .events-nav {
     color: black;
     display: flex;
+    font-family: 'Tangerine';
+    text-shadow: 1.5px 2px rgba(148, 0, 1, 0.17);
     flex-flow: column nowrap;
-    font-size: 4vw;
+    font-size: 50px;
+    font-weight: 600;
     align-items: center;
     text-decoration: none;
     @media screen and (max-width: 580px) {
-      font-size: 6vw;
+      font-size: 50px;
     }
     &::after {
       content: '';

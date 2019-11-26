@@ -9,6 +9,8 @@ const Month = styled.h1`
   background: white;
   display: right;
   top: 0;
+  text-shadow: 1.5px 2px rgba(148, 0, 1, 0.17);
+  font-size: 70px;
 `;
 
 const EventDiv = styled.div`
@@ -24,6 +26,9 @@ const EventDiv = styled.div`
   .event-time {
     padding-left: 18px;
   }
+  .date {
+    font-weight: 600;
+  }
 `;
 
 const EventList = ({event}) => {
@@ -32,7 +37,7 @@ const EventList = ({event}) => {
       <Month>{event[0].month && event[0].month}</Month>
       {event && event.map((event) => (
         <EventDiv key={event.id}>
-          <h4>{event.day}, {event.month} {event.date}</h4>
+          <h4 className='date'>{event.day}, {event.month} {event.date}</h4>
           <h5 className='event-title'>{event.title}</h5>
           <h5 className='event-time'>{event.start} &mdash; {event.end}</h5>
         </EventDiv>

@@ -15,9 +15,9 @@ const WineWrapper = styled.div`
   color: white;
   width: 100%;
   height: auto;
-  padding-top: 180px;
+  padding-top: 10px;
   @media screen and (max-width: 580px) {
-    padding-top: 250px;
+    padding-top: 170px;
     width: 100%;
   }
   .h1 {
@@ -52,8 +52,6 @@ const Wines = () => {
     <WineWrapper>
       <h1>
       </h1>
-      <br/>
-      <br/>
       <br/>
     </WineWrapper>
   );

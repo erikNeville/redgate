@@ -10,6 +10,8 @@ const WineDiv = styled.div`
 const WineTitle = styled.h1`
   font-family: 'Tangerine';
   font-weight: bold;
+  text-shadow: 1.5px 2px rgba(148, 0, 1, 0.17);
+  font-size: 50px;
 `;
 
 const WineList = ({wine}) => {
