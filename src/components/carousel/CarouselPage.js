@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 const CarouselDiv = styled.div`
@@ -12,6 +13,10 @@ const CarouselDiv = styled.div`
     font-family: 'Tangerine';
     font-weight: bold;
     text-shadow: 2px 2px #940001;
+  }
+  .carousel-link {
+    color: white;
+    text-decoration: none;
   }
 `;
 
@@ -56,7 +61,9 @@ const CarouselPage = ({images}) => {
           />
           <Carousel.Caption>
             <CaptionBox>
-              <h3 className='caption'>{images[1].title}</h3>
+              <Link to='/events' className='carousel-link'>
+                <h3 className='caption'>{images[1].title}</h3>
+              </Link>
             </CaptionBox>
           </Carousel.Caption>
         </Carousel.Item>
@@ -68,7 +75,9 @@ const CarouselPage = ({images}) => {
           />
           <Carousel.Caption>
             <CaptionBox>
-              <h3 className='caption'>{images[2].title}</h3>
+              <Link to='/wines' className='carousel-link'>
+                <h3 className='caption'>{images[2].title}</h3>
+              </Link>
             </CaptionBox>
           </Carousel.Caption>
         </Carousel.Item>
@@ -80,7 +89,9 @@ const CarouselPage = ({images}) => {
           />
           <Carousel.Caption>
             <CaptionBox>
-              <h3 className='caption'>{images[3].title}</h3>
+              <Link to='/retailers' className='carousel-link'>
+                <h3 className='caption'>{images[3].title}</h3>
+              </Link>
             </CaptionBox>
           </Carousel.Caption>
         </Carousel.Item>
@@ -92,7 +103,9 @@ const CarouselPage = ({images}) => {
           />
           <Carousel.Caption>
             <CaptionBox>
-              <h3 className='caption'>{images[4].title}</h3>
+              <Link to='/contact' className='carousel-link'>
+                <h3 className='caption'>{images[4].title}</h3>
+              </Link>
             </CaptionBox>
           </Carousel.Caption>
         </Carousel.Item>
