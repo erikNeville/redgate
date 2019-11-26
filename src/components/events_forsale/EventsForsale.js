@@ -32,6 +32,9 @@ const EventsForsale = ({events, forsale}) => {
       <Section info={true}>
         <Events events={events}/>
       </Section>
+      <div>
+        <br/>
+      </div>
       <Section info={false}>
         <Forsale forsale={forsale}/>
       </Section>

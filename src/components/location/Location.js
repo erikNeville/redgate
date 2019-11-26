@@ -28,8 +28,9 @@ const Location = () => {
       </LocationDiv>
       <LocationDiv>
         <Hours>
-          <p>Friday 12:00 PM - 9:00 PM</p>
-          <p>Saturday 12:00 PM – 9:00 PM</p>
+          {/* tasting room hours */}
+          <p>Friday 12:00 PM - 5:00 PM</p>
+          <p>Saturday 12:00 PM – 5:00 PM</p>
           <p>Sunday 12:00 PM – 5:00 PM</p>
         </Hours>
       </LocationDiv>
