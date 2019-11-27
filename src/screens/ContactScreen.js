@@ -16,7 +16,6 @@ const ContactScreenWrapper = styled.div`
     text-shadow: 1.5px 2px rgba(148, 0, 1, 0.17);
   }
   .address-link {
-    background: lightgreen;
     align-self: center;
     color: black;
     display: flex;
@@ -43,7 +42,6 @@ const ContactScreenWrapper = styled.div`
     }
   }
   .email {
-    background: lightgreen;
     align-self: center;
     color: black;
     display: flex;
@@ -72,7 +70,6 @@ const ContactScreenWrapper = styled.div`
   }
 
   .phone {
-    background: lightgreen;
     align-self: center;
     color: black;
     display: flex;

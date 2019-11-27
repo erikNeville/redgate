@@ -1,21 +1,20 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import Events from './events/Events';
-import Forsale from './forsale/Forsale';
 import styled from 'styled-components';
 
 const EventsForsaleWrapper = styled.div`
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   min-height: 15vw;
-  padding-bottom: 2rem;
   @media screen and (max-width: 580px) {
     flex-flow: column nowrap;
-    height: 600px;
+    height: 220px;
   }
 `;
 
 const Section = styled.div`
+  align-self: center;
   background: ${props => props.theme.primary};
   padding-top: 11px;
   text-align: center;
@@ -26,17 +25,11 @@ const Section = styled.div`
   }
 `;
 
-const EventsForsale = ({events, forsale}) => {
+const EventsForsale = ({events}) => {
   return (
     <EventsForsaleWrapper>
       <Section info={true}>
         <Events events={events}/>
-      </Section>
-      <div>
-        <br/>
-      </div>
-      <Section info={false}>
-        <Forsale forsale={forsale}/>
       </Section>
     </EventsForsaleWrapper>
   );

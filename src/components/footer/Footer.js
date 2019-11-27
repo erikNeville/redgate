@@ -14,6 +14,7 @@ const FooterWrapper = styled.div`
   margin-top: 25px;
   text-align: center;
   width: 100%;
+  padding-bottom: 30px;
   @media screen and (max-width: 321px) {
     flex-flow: column nowrap;
     line-height: 25px;

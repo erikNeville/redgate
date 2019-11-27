@@ -6,7 +6,7 @@ import EventList from './EventList';
 const EventsWrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
+  align-items: center;
   padding: 0.25rem 3.5rem;
   text-align: start;
   width: 50vw;
