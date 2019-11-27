@@ -63,6 +63,7 @@ const Phone = styled.h1`
 `;
 
 const Hours = styled.h1`
+  margin-top: 15px;
   padding-top: 5px;
   /* background: lightgreen; */
   font-size: 24px;
@@ -73,7 +74,13 @@ const Hours = styled.h1`
     padding-top: 10px;
   }
   .tasting-hours {
+    font-family: 'Tangerine';
+    font-size: 40px;
     font-weight: 600;
+    padding-bottom: 15px;
+    @media screen and (max-width: 580px) {
+    font-size: 29px;
+  }
   }
 `;
 
