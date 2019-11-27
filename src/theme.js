@@ -3,5 +3,5 @@ export const theme = {
   // primary: '#666',
   // use white to test production
   primary: 'white',
-  hover: '#940001'
+  hover: '#940001',
 };

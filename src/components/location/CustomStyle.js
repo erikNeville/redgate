@@ -6,6 +6,7 @@ Main wrapper
 *
 */
 export const ContactInfoDiv = styled.div`
+  background: orange;
   display: flex;
   flex-flow: row nowrap;
   height: 15vw;
@@ -25,13 +26,15 @@ Address wrapper
 *
 */
 export const LocationDiv = styled.div`
+  /* background: green; */
+  justify-content: center;
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-  padding-top: 11px;
-  width: 50vw;
+  width: 60vw;
 
   .address-link {
+    /* background: lightpink; */
     color: black;
     display: flex;
     flex-flow: column nowrap;
@@ -54,7 +57,7 @@ export const LocationDiv = styled.div`
       transform: width;
       width: 74%;
       @media screen and (max-width: 580px) {
-        width: 99%;
+        width: 75%;
       }
     }
   }
@@ -66,73 +69,16 @@ Address content
 *
 */
 export const LocationHeader = styled.h1`
-  font-size: 3.1vw;
+  font-size: 30px;
   @media screen and (max-width: 580px) {
-    font-size: 5.4vw;
+    font-size: 19px;
   }
 `;
 
 export const LocationSubheader = styled.h3`
-  font-size: 3.1vw;
+  font-size: 24px;
   @media screen and (max-width: 580px) {
-    font-size: 4.3vw;
+    font-size: 16px;
   }
 `;
 
-/*
-*
-Hours content
-*
-*/
-export const Hours = styled.h1`
-  font-size: 3.1vw;
-  line-height: 27px;
-  @media screen and (max-width: 580px) {
-    font-size: 4.1vw;
-    line-height: 5px;
-  }
-`;
-
-/*
-*
-Phone content
-*
-*/
-export const Phone = styled.h1`
-  font-size: 3.1vw;
-  @media screen and (max-width: 580px) {
-    font-size: 4.8vw;
-    padding-top: 10px;
-  }
-
-  /* display for phone number */
-  .phone-link {
-    color: black;
-    display: flex;
-    flex-flow: column nowrap;
-    text-decoration: none;
-
-    &:focus {
-      outline: none;
-    }
-
-    /* line under phone number link */
-    &::after {
-      content: '';
-      align-self: center;
-      background: ${props => props.theme.hover};
-      display: block;
-      height: 2px;
-      transition: width 0.4s;
-      width: 0;
-    }
-
-    &:hover::after {
-      transform: width;
-      width: 45%;
-      @media screen and (max-width: 580px) {
-        width: 65%;
-      }
-    }
-  }
-`;

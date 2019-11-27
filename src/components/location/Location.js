@@ -1,12 +1,81 @@
 import React from 'react';
 import {
-  ContactInfoDiv,
-  Hours,
   LocationDiv,
   LocationHeader,
   LocationSubheader,
-  Phone,
 } from './CustomStyle';
+import styled from 'styled-components';
+
+const ContactInfoDiv = styled.div`
+  /* background: orange; */
+  display: flex;
+  flex-flow: row nowrap;
+  height: 150px;
+  /* margin-bottom: 40px; */
+  @media screen and (max-width: 580px) {
+    margin-bottom: 59px;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    height: 215px;
+  }
+`;
+
+const Phone = styled.h1`
+  /* background: lightblue; */
+  font-size: 30px;
+  @media screen and (max-width: 580px) {
+    font-size: 25px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* display for phone number */
+  .phone-link {
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    text-decoration: none;
+
+    &:focus {
+      outline: none;
+    }
+
+    /* line under phone number link */
+    &::after {
+      content: '';
+      align-self: center;
+      background: ${props => props.theme.hover};
+      display: block;
+      height: 2px;
+      transition: width 0.4s;
+      width: 0;
+    }
+
+    &:hover::after {
+      transform: width;
+      width: 45%;
+      @media screen and (max-width: 580px) {
+        width: 65%;
+      }
+    }
+  }
+`;
+
+const Hours = styled.h1`
+  padding-top: 5px;
+  /* background: lightgreen; */
+  font-size: 24px;
+  line-height: 14px;
+  @media screen and (max-width: 580px) {
+    font-size: 18px;
+    line-height: 5px;
+    padding-top: 10px;
+  }
+  .tasting-hours {
+    font-weight: 600;
+  }
+`;
 
 const Location = () => {
   return (
@@ -24,11 +93,12 @@ const Location = () => {
           <a href='tel:+1-503-428-7115' className='phone-link'>
             1 (503) 428-7115
           </a>
-        </Phone>
+       </Phone>
       </LocationDiv>
+      
       <LocationDiv>
         <Hours>
-          {/* tasting room hours */}
+          <p className='tasting-hours'>Tasting Room Hours</p>
           <p>Friday 12:00 PM - 5:00 PM</p>
           <p>Saturday 12:00 PM – 5:00 PM</p>
           <p>Sunday 12:00 PM – 5:00 PM</p>

@@ -6,12 +6,15 @@ import {faTwitter} from '@fortawesome/free-brands-svg-icons';
 import {faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 const FooterWrapper = styled.div`
+  /* figure out how to put footer at bottom of viewport */
+  /* background: #c77d7e; */
   align-items: center;
   bottom: 0;
   display: flex;
   height: 25px;
   justify-content: space-between;
   margin-top: 25px;
+  padding: 25px 8px;
   text-align: center;
   width: 100%;
   padding-bottom: 30px;

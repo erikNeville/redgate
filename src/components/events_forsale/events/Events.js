@@ -4,10 +4,12 @@ import styled from 'styled-components';
 import EventList from './EventList';
 
 const EventsWrapper = styled.div`
+  /* background: purple; */
+  align-items: center;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  padding: 0.25rem 3.5rem;
+  margin-top: 20px;
+  padding: 0 55px;
   text-align: start;
   width: 50vw;
   height: 500px;
@@ -52,7 +54,7 @@ const EventsWrapper = styled.div`
     }
     &:hover::after {
       transform: width;
-      width: 105%;
+      width: 96%;
     }
   }
 `;
