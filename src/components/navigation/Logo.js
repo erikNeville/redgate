@@ -15,7 +15,7 @@ const Logo = (props) => {
         <img className='logo-image' src={redgateLogo} alt='Redgate Winery Logo' />
       </Link>
       <Link to='/' className='logo-link' onClick={closeNav}>
-        Redgate Vinyard & Winery
+        Redgate Vineyard & Winery
       </Link>
     </RedgateLogo>
   );

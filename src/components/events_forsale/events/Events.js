@@ -77,16 +77,12 @@ const Month = styled.div`
 `;
 
 const Events = ({events}) => {
-  const {november, december, january} = events.month;
+  const {december, january} = events.month;
   
   return (
     <EventsWrapper>
       <Link to='/events' className='events-nav'>Events</Link>
       <div className="event-info">
-        <Month>
-          <h3>November</h3>
-        </Month>
-        <EventList event={november} />
         <Month>
           <h3>December</h3>
         </Month>

@@ -5,11 +5,10 @@ import {ScreenContainer} from '../../components/containers/ScreenContainer';
 import {connect} from 'react-redux';
 
 const EventsScreen = ({events}) => {
-  const {november, december, january} = events.month;
+  const {december, january} = events.month;
   return (
     <BodyContainer>
       <ScreenContainer>
-        <EventList event={november} />
         <EventList event={december} />
         <EventList event={january} />
       </ScreenContainer>
