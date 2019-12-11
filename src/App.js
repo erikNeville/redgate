@@ -1,6 +1,7 @@
 import React, {useLayoutEffect} from 'react';
 import {BrowserRouter, Route, Switch, withRouter} from 'react-router-dom';
 import ContactScreen from './screens/ContactScreen';
+import CreateEvent from './screens/Events/CreateEvent';
 import EventsScreen from './screens/Events/EventsScreen';
 import Footer from './components/footer/Footer';
 import HomeScreen from './screens/HomeScreen';
@@ -26,6 +27,7 @@ function App() {
           <Route path='/events' component={EventsScreen} />
           <Route path='/retailers' component={ForSaleScreen} />
           <Route path='/wines' component={WinesScreen} />
+          <Route path='/admin' component={CreateEvent} />
         </Switch>
         <Footer />
       </ScrollToTop>

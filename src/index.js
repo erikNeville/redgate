@@ -3,13 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {createStore} from 'redux';
+import {applyMiddleware, compose, createStore} from 'redux';
 import {Provider} from 'react-redux';
 import rootReducer from './store/reducers/rootReducer';
-import {ThemeProvider} from 'styled-components';
 import {theme} from './theme';
+import {ThemeProvider} from 'styled-components';
+import thunk from 'redux-thunk';
+import {getFirestore, createFirestoreInstance} from 'redux-firestore';
+import {getFirebase, ReactReduxFirebaseProvider} from 'react-redux-firebase';
+import fbConfig from './config/fbConfig';
 
-const store = createStore(rootReducer);
+const store = createStore(
+  rootReducer,
+);
+
+const rrfProps = {
+  config: fbConfig,
+  dispatch: store.dispatch,
+  createFirestoreInstance,
+}
 
 ReactDOM.render(
   <Provider store={store}>

@@ -3,58 +3,13 @@ const initState = {
     month: {
       december: [
         {
-          id: 15,
-          date: '1st',
-          day: 'Sunday',
-          month: 'December',
-          start: '2pm',
-          end: '4pm',
-          title: '"Orvil Ivie" - Solo Guitar & Vocals',
-        },
-        {
-          id: 16,
-          date: '6th',
-          day: 'Friday',
-          month: 'December',
-          start: '6pm',
-          end: '9pm',
-          title: '"Joanne Broh Blues Band" - Blues',
-        },
-        {
-          id: 17,
-          date: '7th',
-          day: 'Saturday',
-          month: 'December',
-          start: '6pm',
-          end: '9pm',
-          title: '"Gil Reynolds Band"',
-        },
-        {
-          id: 18,
-          date: '8th',
-          day: 'Sunday',
-          month: 'December',
-          start: '1pm',
-          end: '4pm',
-          title: 'Wine Club Pick Up Party',
-        },
-        {
-          id: 19,
-          date: '8th',
-          day: 'Sunday',
-          month: 'December',
-          start: '2pm',
-          end: '4pm',
-          title: '"Orvil Ivie" - Solo Guitar & Vocals',
-        },
-        {
           id: 20,
           date: '13th',
           day: 'Friday',
           month: 'December',
           start: '6pm',
           end: '9pm',
-          title: '"Midnight Pass"  - Steve\'s Birthday Party!',
+          title: '"Midnight Pass" - Steve\'s Birthday Party!',
         },
         {
           id: 21,
@@ -72,16 +27,16 @@ const initState = {
           month: 'December',
           start: '2pm',
           end: '7pm',
-          title: '"Spitit Mountain Annual Holiday Wine & Spirits Fair" - We will be at the 2019 ANNUAL HOLIDAY WINE & SPIRITS FAIR at Spirit Mountain Casino. Public event is from 2 – 7 PM in the Event Center with live entertainment. Admission is free. Vendors will consist of Oregon wineries, distillers, brewers, gourmet food, artist, lifestyle & craft.',
+          title:
+            '"Spitit Mountain Annual Holiday Wine & Spirits Fair" - We will be at the 2019 ANNUAL HOLIDAY WINE & SPIRITS FAIR at Spirit Mountain Casino. Public event is from 2 – 7 PM in the Event Center with live entertainment. Admission is free. Vendors will consist of Oregon wineries, distillers, brewers, gourmet food, artist, lifestyle & craft.',
         },
         {
           id: 23,
           date: '15th',
           day: 'Sunday',
           month: 'December',
-          start: '1pm',
-          end: '4pm',
-          title: 'Mike Moon Celebration of Life',
+          end: 'Closed to public.',
+          title: 'Closed to public for private event.',
         },
         {
           id: 24,
@@ -141,6 +96,15 @@ const initState = {
         },
         {
           id: 3,
+          date: '10th',
+          day: 'Friday',
+          month: 'January',
+          start: '6pm',
+          end: '9pm',
+          title: '“The Dead Band”',
+        },
+        {
+          id: 4,
           date: '29th',
           day: 'Wednesday',
           month: 'January',
@@ -149,12 +113,67 @@ const initState = {
           title: '"Ronnie Kay & Uncle Rey"',
         },
       ],
+      february: [
+        {
+          id: 1,
+          date: '8th',
+          day: 'Saturday',
+          month: 'February',
+          start: '6pm',
+          end: '9pm',
+          title: '"The Dead Band"',
+        },
+        {
+          id: 2,
+          date: '14th',
+          day: 'Friday',
+          month: 'February',
+          start: '6pm',
+          end: '9pm',
+          title: '"Ted Vaughn Blues Band"',
+        },
+      ],
+      march: [
+        {
+          id: 1,
+          date: '8th',
+          day: 'Sunday',
+          month: 'March',
+          start: '12pm',
+          end: '5pm',
+          title: 'Redgate Wine Club Pickup Party',
+        },
+        {
+          id: 2,
+          date: '13th',
+          day: 'Friday',
+          month: 'March',
+          start: '6pm',
+          end: '9pm',
+          title: '"Ted Vaughn Blues Band"',
+        },
+      ],
+      april: [
+        {
+          id: 1,
+          date: '11th',
+          day: 'Saturday',
+          month: 'April',
+          start: '6pm',
+          end: '9pm',
+          title: '"Iron Butterfly\'s" Martin Gerschwitz',
+        },
+      ],
     },
   },
 };
 
-const eventReducer = (state = initState) => {
+const eventReducer = (state = initState, action) => {
+  // switch (action.type) {
+  //   case 'CREATE_EVENT':
+  //     console.log('created event', action.event);
+  // }
   return state;
-}
+};
 
 export default eventReducer;

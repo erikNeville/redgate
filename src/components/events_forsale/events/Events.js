@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import EventList from './EventList';
 
@@ -21,7 +21,7 @@ const EventsWrapper = styled.div`
     font-size: 3vw;
   }
   .p {
-    font-size:2.6vw;
+    font-size: 2.6vw;
   }
   @media screen and (max-width: 580px) {
     width: 100%;
@@ -29,7 +29,7 @@ const EventsWrapper = styled.div`
   }
   .event-info {
     overflow-y: scroll;
-    background: #F8F8F8;
+    background: #f8f8f8;
     box-shadow: inset 0 -2px 10px gray;
   }
   .event-info::-webkit-scrollbar {
@@ -76,13 +76,15 @@ const Month = styled.div`
   box-shadow: 0 2px 9px gray;
 `;
 
-const Events = ({events}) => {
-  const {december, january} = events.month;
-  
+const Events = ({ events }) => {
+  const { december, january, february, march, april } = events.month;
+
   return (
     <EventsWrapper>
-      <Link to='/events' className='events-nav'>Events</Link>
-      <div className="event-info">
+      <Link to='/events' className='events-nav'>
+        Events
+      </Link>
+      <div className='event-info'>
         <Month>
           <h3>December</h3>
         </Month>
@@ -91,6 +93,21 @@ const Events = ({events}) => {
           <h3>January</h3>
         </Month>
         <EventList event={january} />
+        <Month>
+          <h3>February</h3>
+        </Month>
+        <EventList event={february} />
+        <Month>
+          <h3>March</h3>
+        </Month>
+        <EventList event={march} />
+        <Month>
+          <h3>April</h3>
+        </Month>
+        <EventList event={april} />
+        <br />
+        <br />
+        <br />
       </div>
     </EventsWrapper>
   );
