@@ -77,7 +77,16 @@ const Month = styled.div`
 `;
 
 const Events = ({ events }) => {
-  const { december, january, february, march, april } = events.month;
+  const {
+    december,
+    january,
+    february,
+    march,
+    april,
+    may,
+    june,
+    july,
+  } = events.month;
 
   return (
     <EventsWrapper>
@@ -105,9 +114,18 @@ const Events = ({ events }) => {
           <h3>April</h3>
         </Month>
         <EventList event={april} />
-        <br />
-        <br />
-        <br />
+        <Month>
+          <h3>May</h3>
+        </Month>
+        <EventList event={may} />
+        <Month>
+          <h3>June</h3>
+        </Month>
+        <EventList event={june} />
+        <Month>
+          <h3>July</h3>
+        </Month>
+        <EventList event={july} />
       </div>
     </EventsWrapper>
   );
