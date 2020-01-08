@@ -95,10 +95,6 @@ const Events = ({ events }) => {
       </Link>
       <div className='event-info'>
         <Month>
-          <h3>December</h3>
-        </Month>
-        <EventList event={december} />
-        <Month>
           <h3>January</h3>
         </Month>
         <EventList event={january} />
@@ -126,6 +122,8 @@ const Events = ({ events }) => {
           <h3>July</h3>
         </Month>
         <EventList event={july} />
+        <br />
+        <br />
       </div>
     </EventsWrapper>
   );
