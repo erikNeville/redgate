@@ -49,6 +49,24 @@ const initState = {
         },
         {
           id: 6,
+          date: '24th',
+          day: 'Friday',
+          month: 'January',
+          start: '6pm',
+          end: '9pm',
+          title: "“Rock 'n Roll Cowboys”",
+        },
+        {
+          id: 7,
+          date: '25th',
+          day: 'Saturday',
+          month: 'January',
+          start: '6pm',
+          end: '9pm',
+          title: '“Joanne Broh Blues”',
+        },
+        {
+          id: 8,
           date: '31st',
           day: 'Friday',
           month: 'January',
@@ -121,7 +139,7 @@ const initState = {
           month: 'March',
           start: '6pm',
           end: '9pm',
-          title: '"Joanne Broh Band"',
+          title: '"Joanne Broh Blues"',
         },
         {
           id: 2,
@@ -270,7 +288,7 @@ const initState = {
           month: 'May',
           start: '6pm',
           end: '9pm',
-          title: '"Joanne Broh Band"',
+          title: '"Joanne Broh Blues"',
         },
         {
           id: 4,
@@ -344,7 +362,7 @@ const initState = {
           month: 'June',
           start: '6pm',
           end: '9pm',
-          title: 'Joanne Broh Band',
+          title: '"Joanne Broh Blues"',
         },
         {
           id: 6,
