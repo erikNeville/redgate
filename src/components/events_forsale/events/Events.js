@@ -40,7 +40,7 @@ const EventsWrapper = styled.div`
     color: black;
     display: flex;
     font-family: 'Tangerine';
-    text-shadow: 1.5px 2px rgba(148, 0, 1, 0.17);
+    text-shadow: 1.5px 2px rgba(148, 0, 1, 0.1);
     flex-flow: column nowrap;
     font-size: 50px;
     font-weight: 600;
@@ -77,7 +77,16 @@ const Month = styled.div`
 `;
 
 const Events = ({ events }) => {
-  const { january, february, march, april, may, june, july } = events.month;
+  const {
+    january,
+    february,
+    march,
+    april,
+    may,
+    june,
+    july,
+    august,
+  } = events.month;
 
   return (
     <EventsWrapper>
@@ -113,7 +122,10 @@ const Events = ({ events }) => {
           <h3>July</h3>
         </Month>
         <EventList event={july} />
-        <br />
+        <Month>
+          <h3>August</h3>
+        </Month>
+        <EventList event={august} />
         <br />
       </div>
     </EventsWrapper>

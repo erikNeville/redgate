@@ -26,15 +26,13 @@ Address wrapper
 *
 */
 export const LocationDiv = styled.div`
-  /* background: green; */
   justify-content: center;
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
-  width: 60vw;
+  width: 50vw;
 
   .address-link {
-    /* background: lightpink; */
     color: black;
     display: flex;
     flex-flow: column nowrap;
@@ -57,7 +55,7 @@ export const LocationDiv = styled.div`
       transform: width;
       width: 74%;
       @media screen and (max-width: 580px) {
-        width: 75%;
+        width: 52%;
       }
     }
   }
@@ -81,4 +79,3 @@ export const LocationSubheader = styled.h3`
     font-size: 16px;
   }
 `;
-
