@@ -519,6 +519,15 @@ const initState = {
         },
         {
           id: 4,
+          date: '24th',
+          day: 'Friday',
+          month: 'July',
+          start: '6pm',
+          end: '9pm',
+          title: '"DRTR Blues Band"',
+        },
+        {
+          id: 5,
           date: '25th',
           day: 'Saturday',
           month: 'July',
@@ -527,7 +536,7 @@ const initState = {
           title: '"Joanne Broh Band"',
         },
         {
-          id: 5,
+          id: 6,
           date: '31st',
           day: 'Friday',
           month: 'July',
@@ -584,6 +593,15 @@ const initState = {
         },
         {
           id: 6,
+          date: '28th',
+          day: 'Friday',
+          month: 'August',
+          start: '6pm',
+          end: '9pm',
+          title: '"DRTR Blues Band"',
+        },
+        {
+          id: 7,
           date: '29th',
           day: 'Saturday',
           month: 'August',
