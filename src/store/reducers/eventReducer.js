@@ -1,63 +1,7 @@
 const initState = {
   events: {
     month: {
-      january: [
-        {
-          id: 9,
-          date: '31st',
-          day: 'Friday',
-          month: 'January',
-          start: '6pm',
-          end: '9pm',
-          title: '“Orvil Ivie Trio”',
-        },
-      ],
       february: [
-        {
-          id: 1,
-          date: '1st',
-          day: 'Saturday',
-          month: 'February',
-          start: '6pm',
-          end: '9pm',
-          title: '"Joanne Broh Blues Band"',
-        },
-        {
-          id: 2,
-          date: '2nd',
-          day: 'Sunday',
-          month: 'February',
-          start: '12pm',
-          end: '6pm',
-          title: 'Superbowl Party',
-        },
-        {
-          id: 3,
-          date: '7th',
-          day: 'Friday',
-          month: 'February',
-          start: '6pm',
-          end: '9pm',
-          title: '"Midnight Pass"',
-        },
-        {
-          id: 4,
-          date: '8th',
-          day: 'Saturday',
-          month: 'February',
-          start: '6pm',
-          end: '9pm',
-          title: '"The Dead Band"',
-        },
-        {
-          id: 5,
-          date: '9th',
-          day: 'Sunday',
-          month: 'February',
-          start: '2pm',
-          end: '4pm',
-          title: '"Ronni Kay and Gil"',
-        },
         {
           id: 6,
           date: '14th',
@@ -111,6 +55,15 @@ const initState = {
           start: '6pm',
           end: '9pm',
           title: '"Out of This World"',
+        },
+        {
+          id: 12,
+          date: '29th',
+          day: 'Saturday',
+          month: 'February',
+          start: '6pm',
+          end: '9pm',
+          title: '"Orvil Ivie / Mike Renwick"',
         },
       ],
       march: [
@@ -497,7 +450,7 @@ const initState = {
           month: 'June',
           start: '5pm',
           end: '11pm',
-          title: '"Wanda\'s Wedding"',
+          title: '"Wanda\'s Wedding (Closed to Public)"',
         },
         {
           id: 7,

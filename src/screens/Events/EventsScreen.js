@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 
 const EventsScreen = ({ events }) => {
   const {
-    january,
     february,
     march,
     april,
@@ -18,7 +17,6 @@ const EventsScreen = ({ events }) => {
   return (
     <BodyContainer>
       <ScreenContainer>
-        <EventList event={january} />
         <EventList event={february} />
         <EventList event={march} />
         <EventList event={april} />

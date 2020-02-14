@@ -78,7 +78,6 @@ const Month = styled.div`
 
 const Events = ({ events }) => {
   const {
-    january,
     february,
     march,
     april,
@@ -94,10 +93,6 @@ const Events = ({ events }) => {
         Events
       </Link>
       <div className='event-info'>
-        <Month>
-          <h3>January</h3>
-        </Month>
-        <EventList event={january} />
         <Month>
           <h3>February</h3>
         </Month>
