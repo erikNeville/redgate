@@ -1,7 +1,6 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
-import wines from '../../images/wines/allwines.jpg';
-import styled from 'styled-components';
+import React from "react";
+import wines from "../../images/wines/allwines.jpg";
+import styled from "styled-components";
 
 const WineWrapper = styled.div`
   /* background-image: url(${wines}); */
@@ -50,9 +49,8 @@ const WineWrapper = styled.div`
 const Wines = () => {
   return (
     <WineWrapper>
-      <h1>
-      </h1>
-      <br/>
+      <h1></h1>
+      <br />
     </WineWrapper>
   );
 };
