@@ -77,34 +77,15 @@ const Month = styled.div`
 `;
 
 const Events = ({ events }) => {
-  const {
-    february,
-    march,
-    april,
-    may,
-    june,
-    july,
-    august,
-  } = events.month;
+  const { may, june, july, august, september } = events.month;
 
   return (
     <EventsWrapper>
       <Link to='/events' className='events-nav'>
         Events
       </Link>
+
       <div className='event-info'>
-        <Month>
-          <h3>February</h3>
-        </Month>
-        <EventList event={february} />
-        <Month>
-          <h3>March</h3>
-        </Month>
-        <EventList event={march} />
-        <Month>
-          <h3>April</h3>
-        </Month>
-        <EventList event={april} />
         <Month>
           <h3>May</h3>
         </Month>
@@ -121,6 +102,10 @@ const Events = ({ events }) => {
           <h3>August</h3>
         </Month>
         <EventList event={august} />
+        <Month>
+          <h3>September</h3>
+        </Month>
+        <EventList event={september} />
         <br />
       </div>
     </EventsWrapper>

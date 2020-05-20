@@ -18,7 +18,7 @@ const EventDiv = styled.div`
   flex-flow: column;
   padding-left: 15px;
   padding-bottom: 15px;
-  
+
   .event-title {
     padding-left: 10px;
   }
@@ -31,17 +31,30 @@ const EventDiv = styled.div`
   }
 `;
 
-const EventList = ({event}) => {
+const EventList = ({ event }) => {
   return (
     <div>
       <Month>{event[0].month && event[0].month}</Month>
-      {event && event.map((event) => (
-        <EventDiv key={event.id}>
-          <h4 className='date'>{event.day}, {event.month} {event.date}</h4>
-          <h5 className='event-title'>{event.title}</h5>
-          <h5 className='event-time'>{event.start} &mdash; {event.end}</h5>
-        </EventDiv>
-      ))}
+      {event &&
+        event.map(event => (
+          <EventDiv key={event.id}>
+            {event.date ? (
+              <h4 className='date'>
+                {event.day}, {event.month} {event.date}
+              </h4>
+            ) : (
+              <h4 className='date'>{event.day}</h4>
+            )}
+
+            <h5 className='event-title'>{event.title}</h5>
+            {event.start && event.end ? (
+              <h5 className='event-time'>
+                {event.start} &mdash; {event.end}
+              </h5>
+            ) : null}
+            {event.special && <h5 className='event-time'>{event.special}</h5>}
+          </EventDiv>
+        ))}
     </div>
   );
 };

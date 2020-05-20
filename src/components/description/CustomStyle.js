@@ -10,7 +10,15 @@ export const DescriptionDiv = styled.div`
   min-height: 30vh;
 
   .content {
-    font-size: 2.6vh;
-    padding: .5rem 2rem;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+  }
+
+  .notice {
+    font-size: 24px;
+  }
+
+  .notice-info {
+    font-size: 18px;
   }
 `;

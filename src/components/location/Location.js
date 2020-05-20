@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  LocationDiv,
-  LocationHeader,
-  LocationSubheader,
-} from './CustomStyle';
+import { LocationDiv, LocationHeader, LocationSubheader } from './CustomStyle';
 import styled from 'styled-components';
 
 const ContactInfoDiv = styled.div`
@@ -69,7 +65,7 @@ const Hours = styled.h1`
   font-size: 24px;
   line-height: 14px;
   @media screen and (max-width: 580px) {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 5px;
     padding-top: 10px;
   }
@@ -79,8 +75,8 @@ const Hours = styled.h1`
     font-weight: 600;
     padding-bottom: 15px;
     @media screen and (max-width: 580px) {
-    font-size: 29px;
-  }
+      font-size: 29px;
+    }
   }
 `;
 
@@ -100,14 +96,14 @@ const Location = () => {
           <a href='tel:+1-503-428-7115' className='phone-link'>
             1 (503) 428-7115
           </a>
-       </Phone>
+        </Phone>
       </LocationDiv>
-      
+
       <LocationDiv>
         <Hours>
           <p className='tasting-hours'>Tasting Room Hours</p>
-          <p>Friday 12:00 PM - 9:00 PM</p>
-          <p>Saturday 12:00 PM – 9:00 PM</p>
+          <p>Friday 12:00 PM - 5:00 PM</p>
+          <p>Saturday 12:00 PM – 5:00 PM</p>
           <p>Sunday 12:00 PM – 5:00 PM</p>
         </Hours>
       </LocationDiv>
