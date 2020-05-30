@@ -1,11 +1,13 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const CarouselDiv = styled.div`
   padding-top: 81px;
+  max-width: 1080px;
+  margin: auto;
   @media screen and (max-width: 768px) {
     padding-top: 98px;
   }
@@ -24,12 +26,10 @@ const CarouselDiv = styled.div`
 const CaptionBox = styled.div`
   background: rgba(54, 61, 72, 0.7);
   border-radius: 10px;
-  margin-left: 20%;
-  width: 40vw;
 `;
 
 // handles the movement of carousel images
-const CarouselPage = ({images}) => {
+const CarouselPage = ({ images }) => {
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(null);
 
@@ -40,10 +40,13 @@ const CarouselPage = ({images}) => {
   // console.log(images);
   return (
     <CarouselDiv>
-      <Carousel activeIndex={index} direction={direction} onSelect={handleSelect}>
+      <Carousel
+        activeIndex={index}
+        direction={direction}
+        onSelect={handleSelect}>
         <Carousel.Item>
           <img
-            className="d-block w-100 image"
+            className='d-block w-100 image'
             src={images[0].src}
             alt={images[0].title}
           />
@@ -55,7 +58,7 @@ const CarouselPage = ({images}) => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className='d-block w-100'
             src={images[1].src}
             alt={images[1].title}
           />
@@ -69,7 +72,7 @@ const CarouselPage = ({images}) => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className='d-block w-100'
             src={images[2].src}
             alt={images[2].title}
           />
@@ -83,7 +86,7 @@ const CarouselPage = ({images}) => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className='d-block w-100'
             src={images[3].src}
             alt={images[3].title}
           />
@@ -97,7 +100,7 @@ const CarouselPage = ({images}) => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className='d-block w-100'
             src={images[4].src}
             alt={images[4].title}
           />

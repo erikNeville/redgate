@@ -10,12 +10,12 @@ const EventList = ({ event }) => {
   return (
     <div>
       {event &&
-        event.map(event => (
+        event.map((event) => (
           <EventText>
             <h5>{event.title}</h5>
             <p>
-              {event.day}, {event.month} {event.date} || {event.start}-
-              {event.end}
+              {event.day}, {event.month} {event.date}&nbsp;&nbsp;||&nbsp;&nbsp;
+              {event.start}-{event.end}
             </p>
           </EventText>
         ))}
