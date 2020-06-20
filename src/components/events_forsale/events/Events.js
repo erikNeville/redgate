@@ -52,7 +52,7 @@ const EventsWrapper = styled.div`
     }
     &::after {
       content: '';
-      background: ${props => props.theme.hover};
+      background: ${(props) => props.theme.hover};
       display: block;
       height: 2px;
       transition: width 0.4s;
@@ -86,10 +86,6 @@ const Events = ({ events }) => {
       </Link>
 
       <div className='event-info'>
-        <Month>
-          <h3>May</h3>
-        </Month>
-        <EventList event={may} />
         <Month>
           <h3>June</h3>
         </Month>
