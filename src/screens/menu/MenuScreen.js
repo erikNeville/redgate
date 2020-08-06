@@ -6,7 +6,6 @@ import MenuList from './MenuList';
 
 const MenuScreen = ({ menuItems }) => {
   const { pizza } = menuItems;
-  console.log(pizza);
   return (
     <BodyContainer>
       <ScreenContainer>
