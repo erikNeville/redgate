@@ -41,7 +41,7 @@ const Phone = styled.h1`
     &::after {
       content: '';
       align-self: center;
-      background: ${props => props.theme.hover};
+      background: ${(props) => props.theme.hover};
       display: block;
       height: 2px;
       transition: width 0.4s;
@@ -102,8 +102,8 @@ const Location = () => {
       <LocationDiv>
         <Hours>
           <p className='tasting-hours'>Tasting Room Hours</p>
-          <p>Friday 12:00 PM - 5:00 PM</p>
-          <p>Saturday 12:00 PM – 5:00 PM</p>
+          <p>Friday 12:00 PM - 9:00 PM</p>
+          <p>Saturday 12:00 PM – 9:00 PM</p>
           <p>Sunday 12:00 PM – 5:00 PM</p>
         </Hours>
       </LocationDiv>

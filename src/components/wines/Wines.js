@@ -1,6 +1,6 @@
-import React from "react";
-import wines from "../../images/wines/allwines.jpg";
-import styled from "styled-components";
+import React from 'react';
+import wines from '../../images/wines/allwines.jpg';
+import styled from 'styled-components';
 
 const WineWrapper = styled.div`
   /* background-image: url(${wines}); */
@@ -33,7 +33,7 @@ const WineWrapper = styled.div`
     text-decoration: none;
     &::after {
       content: '';
-      background: ${props => props.theme.hover};
+      background: ${(props) => props.theme.hover};
       display: block;
       height: 2px;
       transition: width 0.4s;

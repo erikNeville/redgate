@@ -1,16 +1,16 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const NavLinks = (props) => {
   const closeNav = () => {
-		if (props.displayMobile) {
-			props.toggleMobileNav();
-		}
-	};
+    if (props.displayMobile) {
+      props.toggleMobileNav();
+    }
+  };
   let tempTabIndex;
   if (props.isMobileLink) {
-    tempTabIndex = "-1";
-  };
+    tempTabIndex = '-1';
+  }
 
   return (
     <ul className='nav-links'>
@@ -30,6 +30,15 @@ const NavLinks = (props) => {
           onClick={closeNav}
           tabIndex={tempTabIndex}>
           Wines
+        </Link>
+      </li>
+      <li>
+        <Link
+          to='/menu'
+          className='link'
+          onClick={closeNav}
+          tabIndex={tempTabIndex}>
+          Food
         </Link>
       </li>
       <li>
