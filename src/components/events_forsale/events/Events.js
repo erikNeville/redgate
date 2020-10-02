@@ -77,7 +77,7 @@ const Month = styled.div`
 `;
 
 const Events = ({ events }) => {
-  const { september, october, november } = events.month;
+  const { august, september, october } = events.month;
 
   return (
     <EventsWrapper>
@@ -87,6 +87,11 @@ const Events = ({ events }) => {
 
       <div className='event-info'>
         <Month>
+          <h3>August</h3>
+        </Month>
+        <EventList event={august} />
+
+        <Month>
           <h3>September</h3>
         </Month>
         <EventList event={september} />
@@ -95,11 +100,6 @@ const Events = ({ events }) => {
           <h3>October</h3>
         </Month>
         <EventList event={october} />
-
-        <Month>
-          <h3>November</h3>
-        </Month>
-        <EventList event={november} />
 
         <br />
         <br />

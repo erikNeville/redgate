@@ -48,7 +48,7 @@ const MenuList = ({ menuItem }) => {
         <DescriptionText>
           Now serving gourmet pizza during events!
         </DescriptionText>
-        <DescriptionText>Chose between the options below (pizzas typically serve four):</DescriptionText>
+        <DescriptionText>Chose between the options below:</DescriptionText>
       </DescriptionDiv>
       {menuItem &&
         menuItem.map((item) => (
