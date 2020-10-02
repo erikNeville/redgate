@@ -1,42 +1,60 @@
 import React from 'react';
-import { DescriptionDiv } from './CustomStyle';
 import { Link } from 'react-router-dom';
-// import styled from 'styled-components';
+import styled from 'styled-components';
 
-// const FoodLink = styled.p`
-//   align-items: center;
-//   align-content: center;
-//   border-radius: 8px;
-//   color: black;
-//   display: flex;
-//   flex-flow: row;
-//   font-size: 2.2vh;
-//   justify-content: center;
-//   padding: 0 1rem;
-//   text-decoration: none;
+const DescriptionDiv = styled.div`
+  background: ${(props) => props.theme.primary};
+  display: flex;
+  flex-flow: column;
+  padding-top: 1rem;
+  max-width: 1120px;
+  margin: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  min-height: 30vh;
+  .content {
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+  }
 
-//   /* probably not needed */
-//   &:focus {
-//     background: rgba(0, 0, 0, 0.1);
-//     outline: none;
-//   }
+  .notice {
+    font-size: 24px;
+  }
 
-//   /* line which grows on hover */
-//   &::after {
-//     content: '';
-//     background: ${(props) => props.theme.hover};
-//     display: block;
-//     height: 2px;
-//     transition: width 0.4s;
-//     width: 0;
-//   }
-//   &:hover::after {
-//     transform: width;
-//     width: 125%;
-//   }
-// `;
+  .notice-info {
+    font-size: 18px;
+  }
+`;
 
-const Description = (props) => {
+const MenuLink = styled.p`
+  width: 220px;
+  line-height: 22px;
+
+  .link {
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    text-shadow: 1.5px 2px rgba(148, 0, 1, 0.1);
+    align-items: center;
+    text-decoration: none;
+    font-weight: 450;
+
+    &::after {
+      content: '';
+      background: ${(props) => props.theme.hover};
+      display: block;
+      height: 2px;
+      transition: width 0.4s;
+      width: 0;
+    }
+    &:hover::after {
+      transform: width;
+      width: 99%;
+    }
+  }
+`;
+
+const Description = () => {
   return (
     <DescriptionDiv>
       <hr />
@@ -48,9 +66,11 @@ const Description = (props) => {
       </p>
       <p className='content'>
         We are now serving gourmet pizzas during our events!{' '}
-        <Link to='/menu' className='link'>
-          Check our menu to learn more!
-        </Link>
+        <MenuLink>
+          <Link to='/menu' className='link'>
+            Check our menu to learn more!
+          </Link>
+        </MenuLink>
       </p>
     </DescriptionDiv>
   );

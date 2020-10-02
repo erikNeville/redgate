@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import EventList from './EventList';
 
 const EventsWrapper = styled.div`
-  /* background: purple; */
   /* width on wider screen to be larger */
   align-items: center;
   display: flex;
@@ -30,7 +29,11 @@ const EventsWrapper = styled.div`
   .event-info {
     overflow-y: scroll;
     background: #f8f8f8;
+    width: 400px;
     box-shadow: inset 0 -2px 10px gray;
+    @media screen and (max-width: 520px) {
+      width: 264px;
+    }
   }
   .event-info::-webkit-scrollbar {
     width: 0 !important;
@@ -45,10 +48,11 @@ const EventsWrapper = styled.div`
     font-size: 50px;
     font-weight: 600;
     align-items: center;
+    line-height: 32px;
     text-decoration: none;
     @media screen and (max-width: 580px) {
       font-size: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 24px;
     }
     &::after {
       content: '';
@@ -77,7 +81,7 @@ const Month = styled.div`
 `;
 
 const Events = ({ events }) => {
-  const { august, september, october } = events.month;
+  const { october, november } = events.month;
 
   return (
     <EventsWrapper>
@@ -87,19 +91,14 @@ const Events = ({ events }) => {
 
       <div className='event-info'>
         <Month>
-          <h3>August</h3>
-        </Month>
-        <EventList event={august} />
-
-        <Month>
-          <h3>September</h3>
-        </Month>
-        <EventList event={september} />
-
-        <Month>
           <h3>October</h3>
         </Month>
         <EventList event={october} />
+
+        <Month>
+          <h3>November</h3>
+        </Month>
+        <EventList event={november} />
 
         <br />
         <br />

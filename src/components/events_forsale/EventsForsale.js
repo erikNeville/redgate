@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Events from './events/Events';
 import styled from 'styled-components';
 
@@ -15,7 +15,7 @@ const EventsForsaleWrapper = styled.div`
 
 const Section = styled.div`
   align-self: center;
-  background: ${props => props.theme.primary};
+  background: ${(props) => props.theme.primary};
   padding-top: 11px;
   text-align: center;
   width: 50vw;
@@ -25,11 +25,11 @@ const Section = styled.div`
   }
 `;
 
-const EventsForsale = ({events}) => {
+const EventsForsale = ({ events }) => {
   return (
     <EventsForsaleWrapper>
       <Section info={true}>
-        <Events events={events}/>
+        <Events events={events} />
       </Section>
     </EventsForsaleWrapper>
   );
