@@ -6,15 +6,15 @@ import Location from '../components/location/Location';
 import Wines from '../components/wines/Wines';
 
 const HomeScreen = () => {
-  return (
-    <div>
-      <CarouselPage />
-      <Description />
-      <Location />
-      <EventsForsale />
-      <Wines />
-    </div>
-  );
+	return (
+		<>
+			<CarouselPage />
+			<Description />
+			<Location />
+			<EventsForsale />
+			<Wines />
+		</>
+	);
 };
 
 export default HomeScreen;
