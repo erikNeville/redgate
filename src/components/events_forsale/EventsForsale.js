@@ -1,7 +1,7 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import Events from './events/Events';
-import styled from 'styled-components';
+import React from "react";
+import { connect } from "react-redux";
+import Events from "./events/Events";
+import styled from "styled-components";
 
 const EventsForsaleWrapper = styled.div`
   display: flex;
@@ -15,7 +15,7 @@ const EventsForsaleWrapper = styled.div`
 
 const Section = styled.div`
   align-self: center;
-  background: ${(props) => props.theme.primary};
+  background: ${props => props.theme.primary};
   padding-top: 11px;
   text-align: center;
   width: 50vw;
@@ -35,10 +35,10 @@ const EventsForsale = ({ events }) => {
   );
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = state => {
   return {
     events: state.events.events,
-    forsale: state.forsale.forsale,
+    forsale: state.forsale.forsale
   };
 };
 
